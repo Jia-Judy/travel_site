@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Travel</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link rel="stylesheet" href="lightbox.min.css">
+      
+        <script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
+        
+        <link rel="stylesheet" href="jquery.fancybox.css">
+      
+        <script type="text/javascript" src="jquery.fancybox.js"></script>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <style>
+            
+            .header-container {position:relative;height:800px;}
+            .opacity-min{opacity:0.75}
+            .margin-64{margin-top:64px}
+            
+            .bgimg-1,.bgimg-2,.bgimg-3 {background-attachment: fixed;background-size:cover;background-repeat:no-repeat;background-position:center;}
+            .bgimg-1 { background-image:url(travel-image/banner-2.jpg);min-height:100%;}
+            .bgimg-2 {background-image:url(travel-image/banner-1.jpg);min-height:400px;}
+            
+            .display-container:hover {display:block}
+            .display-container {position:relative}
+            .display-middle {
+                
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%,-50%); !important  
+            }
+            
+            .contact-image {position:relative;height:400px;}
+        </style>
+        
+    </head>
+    <body>
+        
+<!--navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    
+<!--banner-->    
+        <div class="header-container bgimg-1 opacity-min display-container" id="home">
+            <div id="logo" class="display-middle ">
+                <span class="padding-large border black xlarge letter-spacing animate-opacity opacity-min center">Welcome<span class="hide-small"> To Jia's Web </span></span>
+            </div>     
+        </div>
+        
+<!--PC-Contact-->
+        <div id="contact" class="container text-center d-none d-md-block" style="padding-top:64px;padding-bottom:40px">   
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2><small>Location</small></h2>
+                    <dl>
+                        <dd class="d-none d-lg-block">Stay in the heart of Yangshuo</dd>
+                        <!--<a href="googlemap-hostel.html"><dd id="googlemap">Excellent Location - Show Map</dd></a>-->
+                        
+                        <dd><a data-fancybox data-type="iframe" data-src="googlemap-hostel.html" href="javascript:;" class="alert-info alert-link">
+                            Excellent Location - Show Map
+                            </a></dd>
+                        
+                        <dd><span class="d-none d-lg-block"><i class="fas fa-map-marker-alt"></i> No.23 Pantao Road,</span>Yangshuo, China </dd>
+                        <dd class="d-none d-lg-block"><i class="fas fa-utensils"></i> West street: 0.2 miles;Li river: 0.6 miles </dd>
+                        <a href="hostel-image/location-highlights.jpg" data-lightbox="mygallery" data-title="Popular Facilities"><button type="button" class="btn btn-info btn-sm hide-medium hide-small">More</button></a>
+                    </dl> 
+                </div>
+                <div class="col-sm-6">
+                    <h2><small>Booking</small></h2>
+                    <dl> 
+                        <dd>Free Cancellation</dd>
+                        <dd>Check-in:2pm--Check-out:12pm</dd>
+                        <dd></dd>
+                        <a href="https://www.booking.com/hotel/cn/yang-shuo-jiu-shan-she-tao-su-lu-she.en-gb.html#map_closed" href="javascript:;" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">Booking.com</button></a>
+                    </dl> 
+                </div>
+            </div>
+        </div>
+        
+<!--PC-nice pictures of hostel:3 carousel-->
+        <div class="container d-none d-sm-block d-md-block d-lg-block">
+            <h3 class="text-center d-none d-sm-block d-md-block d-lg-block" style="padding-bottom:30px">LADDER INN</h3>
+            <div class="row" style="padding-bottom: 0px;">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-12 col-xs-12 col-sm-12">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                            </ol>
+                        <div class="carousel-inner">
+      <!--1st group of pictures--->                          
+                                <div class="carousel-item active">
+                                    <div class="row">                         
+                                        <!--double room-->
+                                        <div class="card col-4">
+                                            <a href="hostel-image/doubleroom.jpg" data-fancybox="images-preview" data-width="1000" data-height="1000" data-thumbs='{"autoStart":true}'><img class="card-img-top img-fluid" src="hostel-image/doubleroom.jpg" alt="Card image cap"></a>      
+                                            
+                                            <!--大图-->          
+                                            <div style="display: none;">
+                                                <a href="hostel-image/doubleroom2.jpg" data-fancybox="images-preview" 
+                                                   data-width="1000" data-height="1000"
+                                                   data-thumb="hostel-image/doubleroom2.jpg"></a>
+                                                
+                                                <a href="hostel-image/doubleroom5.jpg" data-fancybox="images-preview" 
+                                                   data-width="1000" data-height="1000"
+                                                   data-thumb="hostel-image/doubleroom5.jpg"></a>
+                                                
+                                                <a href="hostel-image/facilities-sm-1.jpeg" data-fancybox="images-preview" 
+                                                   data-width="1242" data-height="1674"
+                                                   data-thumb="hostel-image/facilities-sm-1.jpeg"></a>
+                                                
+                                                <a href="hostel-image/doubleroom4.jpg" data-fancybox="images-preview" 
+                                                   data-width="1000" data-height="1000"
+                                                   data-thumb="hostel-image/doubleroom4.jpg"></a>
+                                                
+                                                <a href="hostel-image/sink.jpg" data-fancybox="images-preview" 
+                                                   data-width="1000" data-height="1000"
+                                                   data-thumb="hostel-image/sink.jpg"></a>
+                                                
+                                                <a href="hostel-image/doubleroom5.jpg" data-fancybox="images-preview" 
+                                                   data-width="1000" data-height="1000"
+                                                   data-thumb="hostel-image/doubleroom5.jpg"></a>
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">Double room</h5>
+                                                
+                                                <p class="card-text text-center">
+                                                    <span>1 double bed <i class="fas fa-user"></i><i class="fas fa-user"></i><br></span>
+                                                    <small><span class="text-muted">
+                                                        <i class="fas fa-wifi"></i> Free Wifi
+                                                        <i class="fas fa-check"></i> Air conditioning <br>
+                                                        <i class="fas fa-shower"></i> Private bathroom <br>
+                                                        • Tumble dryer  • Cleaning products  • Drying rack for clothing  • Shower  • Hairdryer  • Free toiletries  • Toilet  • Slippers  • Toilet paper  • Electric kettle  • Towels</span></small>
+                                                </p>
+                                                <a href="https://www.booking.com/hotel/cn/yang-shuo-jiu-shan-she-tao-su-lu-she.en-gb.html#map_closed" href="javascript:;" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">Check Price</button></a>
+                                            </div>
+                                        </div>  
+                                        
+                                        <!--twin room-->
+                                        <div class="card col-4">
+                                            <a href="hostel-image/twinroom1.jpg" data-fancybox="images-preview-tr" data-width="1000" data-height="1000"data-thumbs='{"autoStart":true}'><img class="card-img-top img-fluid" src="hostel-image/twinroom1.jpg" alt="Card image cap"></a>
+                                            
+                                            <!--大图-->
+                                            <div style="display: none;">
+                                                
+                                                <a href="hostel-image/twinroom2.jpg" data-fancybox="images-preview-tr" 
+                                                   data-width="1000" data-height="1000"
+                                                   data-thumb="hostel-image/twinroom2.jpg"></a>
+                                                
+                                                <a href="hostel-image/sink2.jpg" data-fancybox="images-preview-tr" 
+                                                   data-width="1000" data-height="1000"
+                                                   data-thumb="hostel-image/sink2.jpg"></a>
+                                                
+                                                <a href="hostel-image/facilities-sm-1.jpeg" data-fancybox="images-preview-tr" 
+                                                   data-width="1242" data-height="1674"
+                                                   data-thumb="hostel-image/facilities-sm-1.jpeg"></a>
+                                                
+                                                
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">Twin room</h5>
+                                                
+                                                <p class="card-text">
+                                                    2 single beds <i class="fas fa-user"></i><i class="fas fa-user"></i><br>
+                                                    <small><span class="text-muted">
+                                                        <i class="fas fa-wifi"></i> Free Wifi
+                                                        <i class="fas fa-check"></i> Air conditioning <br>
+                                                        <i class="fas fa-shower"></i> Private bathroom <br>
+                                                        • Tumble dryer  • Cleaning products  • Drying rack for clothing  • Shower  • Hairdryer  • Free toiletries  • Toilet  • Slippers  • Toilet paper  • Electric kettle  • Towels</span></small>
+                                                </p>
+                                                <a href="https://www.booking.com/hotel/cn/yang-shuo-jiu-shan-she-tao-su-lu-she.en-gb.html#map_closed" href="javascript:;" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">Check Price</button></a>
+                                            </div>
+                                        </div>  
+                                        
+                                        <!--double room with balcony-->
+                                        <div class="card col-4">
+                                            <a href="hostel-image/doubleroom-balcony3.jpg" data-fancybox="images-preview-dbb" data-width="1000" data-height="1000"data-thumbs='{"autoStart":true}'><img class="card-img-top img-fluid" src="hostel-image/doubleroom-balcony3.jpg" alt="Card image cap"></a>
+                                            
+                                            <!--大图-->
+                                            <div style="display: none;">
+                                                <a href="hostel-image/doubleroom-balcony.jpg" data-fancybox="images-preview-dbb" 
+                                                   data-width="1000" data-height="1000"
+                                                   data-thumb="hostel-image/doubleroom-balcony.jpg"></a>
+                                                
+                                                <a href="hostel-image/doubleroom4.jpg" data-fancybox="images-preview-dbb" 
+                                                   data-width="1000" data-height="1000"
+                                                   data-thumb="hostel-image/doubleroom4.jpg"></a>
+                                                
+                                                <a href="hostel-image/sink3.jpg" data-fancybox="images-preview-dbb" 
+                                                   data-width="1000" data-height="1000"
+                                                   data-thumb="hostel-image/sink3.jpg"></a>
+                                                
+                                                <a href="hostel-image/facilities-sm-1.jpeg" data-fancybox="images-preview-dbb" 
+                                                   data-width="1242" data-height="1674"
+                                                   data-thumb="hostel-image/facilities-sm-1.jpeg"></a>
+                                                
+                                                <a href="hostel-image/sink.jpg" data-fancybox="images-preview-dbb" 
+                                                   data-width="1000" data-height="1000"
+                                                   data-thumb="hostel-image/sink.jpg"></a>
+                                                
+                                                <a href="hostel-image/doubleroom5.jpg" data-fancybox="images-preview-dbb" 
+                                                   data-width="1000" data-height="1000"
+                                                   data-thumb="hostel-image/doubleroom5.jpg"></a>
+                                            </div>
+                                            
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">Double room with balcony</h5>
+                                                
+                                                <p class="card-text">
+                                                    1 double bed <i class="fas fa-user"></i><i class="fas fa-user"></i><br>
+                                                    <small><span class="text-muted">
+                                                        <i class="fas fa-wifi"></i> Free Wifi
+                                                        <i class="fas fa-check"></i> Air conditioning <br>
+                                                        <i class="fas fa-shower"></i> Private bathroom <br>
+                                                        • Tumble dryer  • Cleaning products  • Drying rack for clothing  • Shower  • Hairdryer  • Free toiletries  • Toilet  • Slippers  • Toilet paper  • Electric kettle  • Towels</span></small>
+                                                </p>
+                                                <a href="https://www.booking.com/hotel/cn/yang-shuo-jiu-shan-she-tao-su-lu-she.en-gb.html#map_closed" href="javascript:;" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">Check Price</button></a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                            </div>
+                            <!--2nd group of pictures--->  
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                        <img class="d-block w-100" src="travel-image/scenery-1.jpg" alt="Two slide">
+                                    </div>
+                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                        <img class="d-block w-100" src="travel-image/scenery-3.jpg" alt="Two slide">
+                                    </div>
+                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                        <img class="d-block w-100" src="travel-image/scenery-2.jpg" alt="Two slide">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--3rd group of pictures--->  
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                        <img class="d-block w-100" src="travel-image/scenery-1.jpg">
+                                    </div>
+                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                        <img class="d-block w-100" src="travel-image/scenery-3.jpg">
+                                    </div>
+                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                        <img class="d-block w-100" src="travel-image/scenery-2.jpg">
+                                    </div>
+                                </div>  
+                            </div>
+                            
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        
+        <!--2nd parallax image with Contact text-->
+        <div class="bgimg-2 contact-image opacity-min margin-64">
+            <div class="display-middle ">
+                <span class="xxlarge text-white letter-spacing">CONTACT</span> 
+            </div>
+        </div> 
+        
+        <!--PC-nice pictures of hostel:3 carousel-->
+        <div class="container d-none d-sm-block d-md-block d-lg-block">
+            <h3 class="text-center d-none d-sm-block d-md-block d-lg-block" style="padding-bottom:30px">LADDER INN</h3>
+            <div class="row" style="padding-bottom: 0px;">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-12 col-xs-12 col-sm-12">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <!--1st group of pictures--->                          
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                        <img class="d-block w-100" src="travel-image/scenery-1.jpg" alt="First slide" >
+                                    </div>
+                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                        <img class="d-block w-100" src="travel-image/scenery-2.jpg" alt="First slide">
+                                    </div>
+                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                        <img class="d-block w-100" src="travel-image/scenery-3.jpg" alt="First slide">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--2nd group of pictures--->  
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                        <img class="d-block w-100" src="travel-image/scenery-1.jpg" alt="Two slide">
+                                    </div>
+                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                        <img class="d-block w-100" src="travel-image/scenery-3.jpg" alt="Two slide">
+                                    </div>
+                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                        <img class="d-block w-100" src="travel-image/scenery-2.jpg" alt="Two slide">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--3rd group of pictures--->  
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                        <img class="d-block w-100" src="travel-image/scenery-1.jpg">
+                                    </div>
+                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                        <img class="d-block w-100" src="travel-image/scenery-3.jpg">
+                                    </div>
+                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                        <img class="d-block w-100" src="travel-image/scenery-2.jpg">
+                                    </div>
+                                </div>  
+                            </div>
+                            
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        
+        <!--PC-rooms1--> 
+        <div id="room" class="container padding-64 d-none d-lg-block">
+            <h3 class="text-center" style="padding-bottom:40px">ROOMS</h3>
+            <div class="card-deck">
+                <!--double room-->
+                <div class="card col-4">
+                    <a href="hostel-image/doubleroom.jpg" data-fancybox="images-preview" data-width="1000" data-height="1000" data-thumbs='{"autoStart":true}'><img class="card-img-top img-fluid" src="hostel-image/doubleroom.jpg" alt="Card image cap"></a>      
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-12 col-xs-12 col-sm-12">
+                                <div id="carouselExampleControls-db" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleControls-db" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleControls-db" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleControls-db" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner d-none d-sm-block d-md-block d-lg-block">
+                                        <!--1st group of pictures--->   <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                                <img class="d-block w-100" src="hostel-image/doubleroom2.jpg" alt="First slide" >
+                                            </div>
+                                            <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                                <img class="d-block w-100" src="hostel-image/doubleroom.jpg" alt="First slide">
+                                            </div>
+                                            <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                                <img class="d-block w-100" src="hostel-image/doubleroom5.jpg" alt="First slide">
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <!--2nd group of pictures--->     <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                                <img class="d-block w-100" src="hostel-image/doubleroom4.jpg" alt="Two slide">
+                                            </div>
+                                            <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                                <img class="d-block w-100" src="hostel-image/sink.jpg" alt="Two slide">
+                                            </div>
+                                            <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                                <img class="d-block w-100" src="hostel-image/doubleroom5.jpg" alt="Two slide">
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleControls-db" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls-db" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                    </div>
+                    
+                    <!--大图-->
+                    
+                    <div style="display: none;">
+                        <a href="hostel-image/doubleroom2.jpg" data-fancybox="images-preview" 
+                           data-width="1000" data-height="1000"
+                           data-thumb="hostel-image/doubleroom2.jpg"></a>
+                        
+                        <a href="hostel-image/doubleroom5.jpg" data-fancybox="images-preview" 
+                           data-width="1000" data-height="1000"
+                           data-thumb="hostel-image/doubleroom5.jpg"></a>
+                        
+                        <a href="hostel-image/facilities-sm-1.jpeg" data-fancybox="images-preview" 
+                           data-width="1242" data-height="1674"
+                           data-thumb="hostel-image/facilities-sm-1.jpeg"></a>
+                        
+                        <a href="hostel-image/doubleroom4.jpg" data-fancybox="images-preview" 
+                           data-width="1000" data-height="1000"
+                           data-thumb="hostel-image/doubleroom4.jpg"></a>
+                        
+                        <a href="hostel-image/sink.jpg" data-fancybox="images-preview" 
+                           data-width="1000" data-height="1000"
+                           data-thumb="hostel-image/sink.jpg"></a>
+                        
+                        <a href="hostel-image/doubleroom5.jpg" data-fancybox="images-preview" 
+                           data-width="1000" data-height="1000"
+                           data-thumb="hostel-image/doubleroom5.jpg"></a>
+                    </div>
+                    
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Double room</h5>
+                        
+                        <p class="card-text text-center">
+                            <span>1 double bed <i class="fas fa-user"></i><i class="fas fa-user"></i><br></span>
+                            <small><span class="text-muted">
+                                <i class="fas fa-wifi"></i> Free Wifi
+                                <i class="fas fa-check"></i> Air conditioning <br>
+                                <i class="fas fa-shower"></i> Private bathroom <br>
+                                • Tumble dryer  • Cleaning products  • Drying rack for clothing  • Shower  • Hairdryer  • Free toiletries  • Toilet  • Slippers  • Toilet paper  • Electric kettle  • Towels</span></small>
+                        </p>
+                        <a href="https://www.booking.com/hotel/cn/yang-shuo-jiu-shan-she-tao-su-lu-she.en-gb.html#map_closed" href="javascript:;" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">Check Price</button></a>
+                    </div>
+                </div>  
+                
+                <!--twin room-->
+                <div class="card col-4">
+                    <a href="hostel-image/twinroom1.jpg" data-fancybox="images-preview-tr" data-width="1000" data-height="1000"data-thumbs='{"autoStart":true}'><img class="card-img-top img-fluid" src="hostel-image/twinroom1.jpg" alt="Card image cap"></a>
+                    
+                    <div class="container text-center">
+                        
+                        <div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-12 col-xs-12 col-sm-12">
+                                <div id="carouselExampleControls-tr" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleControls-tr" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleControls-tr" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleControls-tr" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <!--1st group of pictures--->                          
+                                        <div class="carousel-item active">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                                    <img class="d-block w-100" src="hostel-image/twinroom1.jpg" alt="First slide" >
+                                                </div>
+                                                <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                                    <img class="d-block w-100" src="hostel-image/twinroom2.jpg" alt="First slide">
+                                                </div>
+                                                <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                                    <img class="d-block w-100" src="hostel-image/sink2.jpg" alt="First slide">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleControls-tr" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls-tr" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                    </div>
+                    
+                    <!--大图-->
+                    
+                    <div style="display: none;">
+                        
+                        <a href="hostel-image/twinroom2.jpg" data-fancybox="images-preview-tr" 
+                           data-width="1000" data-height="1000"
+                           data-thumb="hostel-image/twinroom2.jpg"></a>
+                        
+                        <a href="hostel-image/sink2.jpg" data-fancybox="images-preview-tr" 
+                           data-width="1000" data-height="1000"
+                           data-thumb="hostel-image/sink2.jpg"></a>
+                        
+                        <a href="hostel-image/facilities-sm-1.jpeg" data-fancybox="images-preview-tr" 
+                           data-width="1242" data-height="1674"
+                           data-thumb="hostel-image/facilities-sm-1.jpeg"></a>
+                        
+                        
+                    </div>
+                    
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Twin room</h5>
+                        
+                        <p class="card-text">
+                            2 single beds <i class="fas fa-user"></i><i class="fas fa-user"></i><br>
+                            <small><span class="text-muted">
+                                <i class="fas fa-wifi"></i> Free Wifi
+                                <i class="fas fa-check"></i> Air conditioning <br>
+                                <i class="fas fa-shower"></i> Private bathroom <br>
+                                • Tumble dryer  • Cleaning products  • Drying rack for clothing  • Shower  • Hairdryer  • Free toiletries  • Toilet  • Slippers  • Toilet paper  • Electric kettle  • Towels</span></small>
+                        </p>
+                        <a href="https://www.booking.com/hotel/cn/yang-shuo-jiu-shan-she-tao-su-lu-she.en-gb.html#map_closed" href="javascript:;" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">Check Price</button></a>
+                    </div>
+                </div>  
+                
+                <!--double room with balcony-->
+                <div class="card col-4">
+                    <a href="hostel-image/doubleroom-balcony3.jpg" data-fancybox="images-preview-dbb" data-width="1000" data-height="1000"data-thumbs='{"autoStart":true}'><img class="card-img-top img-fluid" src="hostel-image/doubleroom-balcony3.jpg" alt="Card image cap"></a>
+                    
+                    <div class="container text-center">
+                        
+                        <div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-12 col-xs-12 col-sm-12">
+                                <div id="carouselExampleControls-dbb" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleControls-dbb" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleControls-dbb" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleControls-dbb" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <!--1st group of pictures--->                          
+                                        <div class="carousel-item active">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                                    <img class="d-block w-100" src="hostel-image/doubleroom-balcony.jpg" alt="First slide" >
+                                                </div>
+                                                <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                                    <img class="d-block w-100" src="hostel-image/doubleroom-balcony3.jpg" alt="First slide">
+                                                </div>
+                                                <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                                    <img class="d-block w-100" src="hostel-image/sink3.jpg" alt="First slide">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--2nd group of pictures--->  
+                                        <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                                    <img class="d-block w-100" src="hostel-image/doubleroom4.jpg" alt="Two slide">
+                                                </div>
+                                                <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                                    <img class="d-block w-100" src="hostel-image/sink.jpg" alt="Two slide">
+                                                </div>
+                                                <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
+                                                    <img class="d-block w-100" src="hostel-image/doubleroom5.jpg" alt="Two slide">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleControls-dbb" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls-dbb" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                    </div>
+                    
+                    <!--大图-->
+                    
+                    <div style="display: none;">
+                        <a href="hostel-image/doubleroom-balcony.jpg" data-fancybox="images-preview-dbb" 
+                           data-width="1000" data-height="1000"
+                           data-thumb="hostel-image/doubleroom-balcony.jpg"></a>
+                        
+                        <a href="hostel-image/doubleroom4.jpg" data-fancybox="images-preview-dbb" 
+                           data-width="1000" data-height="1000"
+                           data-thumb="hostel-image/doubleroom4.jpg"></a>
+                        
+                        <a href="hostel-image/sink3.jpg" data-fancybox="images-preview-dbb" 
+                           data-width="1000" data-height="1000"
+                           data-thumb="hostel-image/sink3.jpg"></a>
+                        
+                        <a href="hostel-image/facilities-sm-1.jpeg" data-fancybox="images-preview-dbb" 
+                           data-width="1242" data-height="1674"
+                           data-thumb="hostel-image/facilities-sm-1.jpeg"></a>
+                        
+                        <a href="hostel-image/sink.jpg" data-fancybox="images-preview-dbb" 
+                           data-width="1000" data-height="1000"
+                           data-thumb="hostel-image/sink.jpg"></a>
+                        
+                        <a href="hostel-image/doubleroom5.jpg" data-fancybox="images-preview-dbb" 
+                           data-width="1000" data-height="1000"
+                           data-thumb="hostel-image/doubleroom5.jpg"></a>
+                    </div>
+                    
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Double room with balcony</h5>
+                        
+                        <p class="card-text">
+                            1 double bed <i class="fas fa-user"></i><i class="fas fa-user"></i><br>
+                            <small><span class="text-muted">
+                                <i class="fas fa-wifi"></i> Free Wifi
+                                <i class="fas fa-check"></i> Air conditioning <br>
+                                <i class="fas fa-shower"></i> Private bathroom <br>
+                                • Tumble dryer  • Cleaning products  • Drying rack for clothing  • Shower  • Hairdryer  • Free toiletries  • Toilet  • Slippers  • Toilet paper  • Electric kettle  • Towels</span></small>
+                        </p>
+                        <a href="https://www.booking.com/hotel/cn/yang-shuo-jiu-shan-she-tao-su-lu-she.en-gb.html#map_closed" href="javascript:;" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">Check Price</button></a>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        
+<!--PC-footer-->   
+        <footer class="text-center opacity hover-opacity-off d-none d-md-block" style="max-width:100%;height:300px;background-color: black;padding-top:95px">
+
+            <a href="#home"><button type="button" class="btn btn-sm"><i class="fa fa-arrow-up"></i> To the top</button></a>   
+
+            <p class="text-white p-3">
+                <i class="fab fa-weixin"></i>
+                <i class="fas fa-mobile-alt"></i><br>
+                Powerd by Jia
+            </p>
+
+        </footer>
+        
+         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </body>
+    
+</html>
+        
+    <script>
+    </script>
