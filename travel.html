@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<!-- TEST! -->
+
 <html lang="en">
     <head>
         <title>Travel</title>
@@ -16,11 +18,12 @@
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <style>
             
             .header-container {position:relative;height:800px;}
             .opacity-min{opacity:0.75}
+            .opacity{opacity:0.8}
             .margin-64{margin-top:64px}
             
             .bgimg-1,.bgimg-2,.bgimg-3 {background-attachment: fixed;background-size:cover;background-repeat:no-repeat;background-position:center;}
@@ -29,19 +32,27 @@
             
             
             .padding-large {padding:12px 24px}
-            .pt-l {padding-top:140px}
-            .padding-btn {padding:30px 80px 30px 80px}
+            
+            
             .border {border:1px solid black;border-radius: 4px}
             .hover-white:hover {background-color:#fff!important;}
             .hover-black:hover {color:black!important;}
+            .hover-white-text:hover {color:white!important}
             
+            .xxsmall{font-size:12px}
+            .xsmall{font-size:13px}
+            .small{font-size:16px}
             .large{font-size:18px}
+            .large-22{font-size:22px}
+            .large-20{font-size:20px}
             .xlarge{font-size:24px}
             .xxlarge{font-size:30px}
             .xxxlarge{font-size:50px}
             .xxxxlarge{font-size:70px}
-            .line-height-md{line-height: 2}
+            .line-height-l{line-height: 2}
+            .line-height-md{line-height: 1.3}
             .line-height-s{line-height: 90%}
+            
             
             .font-b-md{font-weight:700!important}
             .letter-spacing-md {letter-spacing:4px}
@@ -61,74 +72,117 @@
             }
             
             .contact-image {position:relative;height:400px;}
+            
+            @media (max-width:700px) {.hide-small {display:none!important};}
+            @media (max-width:992px) and (min-width:701px) {.hide-medium {display:none!important}}
+            @media (min-width:993px) {.hide-large {display:none!important}}
+            
+            @media (min-width:1200px) {.padding-btn {padding:30px 80px 30px 80px}}
+            @media (max-width:1199px) and (min-width:1029px) {.padding-btn-md {padding:20px 60px 20px 60px}}
+            @media (max-width:1028px) {.small-font{font-size:14px;font-weight: bold;padding-top:1px}}
+            
+            
+            @media (min-width:780px) {.pt-l {padding-top:140px}}
+            @media (min-width:470px) and (max-width:779px) {.pt-md {padding-top:160px}}
+            @media (max-width:469px) {.pt-s {padding-top:75px}}
+            
+            @media (min-width:780px) {.padding-large {padding-top:140px}}
+            @media (min-width:470px) and (max-width:779px) {.pt-md {padding-top:160px}}
+            @media (max-width:469px) {.pt-s {padding-top:75px}}
+            
         </style>
         
     </head>
     <body>
         
-<!--navbar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<!--navbar--> 
+        <nav class="navbar navbar-expand-md navbar-dark bg-info opacity-min">
+            <a class="navbar-brand text-white" href="#">TRAVEL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar7">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <!--
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <div class="collapse navbar-collapse justify-content-stretch" id="navbar7">
+                <ul class="navbar-nav ml-auto pr-4 pt-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><p class="hover-white-text text-white large">HOME</p><span class="sr-only">Home</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="//codeply.com"><p class="hover-white-text text-white large">DEALS</p></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>-->
+                        <a class="nav-link" href="#"><p class="hover-white-text text-white large">ABOUT</p></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="//codeply.com"><p class="hover-white-text text-white large">CONTACT</p></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><p class="hover-white-text text-white large">DESTINATIONS</p></a>
+                    </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <!--<input class="form-control mr-sm-2" type="search" placeholder="Search">-->
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">BROWSE</button>
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">SELL</button>
+                    <button class="btn btn-sm bg-purple text-white hover-white hover-black mr-3" type="submit">BROWSE</button>
+                    <button class="btn btn-sm bg-purple text-white hover-white hover-black mr-3" type="submit">SELL</button>
                 </form>
             </div>
         </nav>
     
 <!--banner-->    
         <div class="header-container bgimg-1 opacity-min display-container" id="home">
-            <div class="text-center pt-l">
+            <div class="text-center pt-l pt-s pt-md">
                 <h1><span class="text-white padding-large xxxxlarge letter-spacing-md">Unlocking the <br> world of travel </span></h1>
                 <p><span class="text-white padding-large letter-spacing-s">Prebooked and unwanted travel plans, flignts, hotels, holidays, cruises and more </span></p>
                 <p><span class="text-white padding-large letter-spacing-s">I AM LOOKING FOR... </span></p>
-                <table class="mx-auto">
+                <table class="mx-auto hide-small">
                     <tr>
-                        <td><button class="btn bg-purple text-white hover-white hover-black padding-btn mr-3" type="submit"><i class="fas fa-building xlarge"></i> ACCOMMONDATION</button></td>
-                        <td><button class="btn bg-purple text-white hover-white hover-black padding-btn mr-3" type="submit"><i class="fas fa-plane xlarge"></i> FLIGHTS</button></td>
-                        <td><button class="btn bg-purple text-white hover-white hover-black padding-btn mr-3" type="submit"><i class="fas fa-ticket-alt xlarge"></i> VACATION</button></td>
-                        <td><button class="btn bg-purple text-white hover-white hover-black padding-btn" type="submit"><i class="fas fa-subway xlarge"></i> RAIL / COACH</button></td>
+                        <td><button class="btn bg-purple text-white hover-white hover-black padding-btn padding-btn-md mr-3" type="submit"><i class="fas fa-building xlarge"></i> ACCOMMONDATION</button></td>
+                        <td><button class="btn bg-purple text-white hover-white hover-black padding-btn padding-btn-md mr-3" type="submit"><i class="fas fa-plane xlarge"></i> FLIGHTS</button></td>
+                        <td><button class="btn bg-purple text-white hover-white hover-black padding-btn padding-btn-md mr-3" type="submit"><i class="fas fa-ticket-alt xlarge"></i> VACATION</button></td>
+                        <td><button class="btn bg-purple text-white hover-white hover-black padding-btn padding-btn-md mr-3" type="submit"><i class="fas fa-subway xlarge"></i> RAIL / COACH</button></td>
                     </tr>
                 </table>
-                <table class="mx-auto mt-3">
+                <table class="mx-auto mt-3 hide-small">
                     <tr>
-                        <td><button class="btn bg-purple text-white hover-white hover-black padding-btn mr-3 " type="submit"><i class="fab fa-gripfire xlarge"></i> FESTIVALS</button></td>
-                        <td><button class="btn bg-purple text-white hover-white hover-black padding-btn mr-3" type="submit"><i class="fas fa-ship xlarge"></i> CRUISES</button></td>
-                        <td><button class="btn bg-purple text-white hover-white hover-black padding-btn mr-3" type="submit"><i class="fas fa-ticket-alt xlarge"></i> VOUCHERS</button></td>
+                        <td><button class="btn bg-purple text-white hover-white hover-black padding-btn padding-btn-md mr-3 " type="submit"><i class="fab fa-gripfire xlarge"></i> FESTIVALS</button></td>
+                        <td><button class="btn bg-purple text-white hover-white hover-black padding-btn padding-btn-md mr-3" type="submit"><i class="fas fa-ship xlarge"></i> CRUISES</button></td>
+                        <td><button class="btn bg-purple text-white hover-white hover-black padding-btn padding-btn-md mr-3" type="submit"><i class="fas fa-ticket-alt xlarge"></i> VOUCHERS</button></td>
                     </tr>
                 </table>
+                
+                <table class="mx-auto text-center hide-medium hide-large">
+                    <tr>
+                        <td colspan="2"><button class="btn bg-purple text-white hover-white hover-black padding-btn padding-btn-md mr-3 xsmall" type="submit"><i class="fas fa-building xsmall"></i> ACCOMMONDATION</button></td> 
+                    </tr>
+                    <tr>
+                        <td><button class="btn bg-purple text-white hover-white hover-black padding-btn padding-btn-md mr-3 xsmall" type="submit"><i class="fas fa-plane xsmall"></i> FLIGHTS</button></td>
+                        <td><button class="btn bg-purple text-white hover-white hover-black padding-btn padding-btn-md mr-3 xsmall" type="submit"><i class="fas fa-ticket-alt xsmall"></i> VACATION</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn bg-purple text-white hover-white hover-black padding-btn padding-btn-md mr-3 xsmall" type="submit"><i class="fas fa-subway xsmall"></i> RAIL / COACH</button></td>
+                        <td><button class="btn bg-purple text-white hover-white hover-black padding-btn padding-btn-md mr-3 xsmall" type="submit"><i class="fab fa-gripfire xsmall"></i> FESTIVALS</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn bg-purple text-white hover-white hover-black padding-btn padding-btn-md mr-3 xsmall" type="submit"><i class="fas fa-ship xsmall"></i> CRUISES</button></td>
+                        <td><button class="btn bg-purple text-white hover-white hover-black padding-btn padding-btn-md mr-3 xsmall" type="submit"><i class="fas fa-ticket-alt xsmall"></i> VOUCHERS</button></td>
+                    </tr>
+                </table>
+                
                 <p class="pt-4"><span class="text-white padding-large letter-spacing-s">>I WANT TO BROWSE ALL </span></p>
             </div>     
         </div>
         
 <!--introduction-->
-        <div id="contact" class="container d-none d-md-block" style="padding-top:64px;padding-bottom:40px">   
+        <div id="contact" class="container " style="padding-top:64px;padding-bottom:40px">   
             <div class="row">
-                <div class="col-sm-6 pl-5 pr-5">
-                    <h1 class="pt-5 xxxlarge line-height-s"><small>Buy and sell unwanted <br> travel tickets in minutes</small></h1>
-                    <p class="line-height-md pt-3">Whether you have an unused train ticket, hotel, booking, or travel voucher, get money back from your unwated booking, while passing on the savings to someone else.</p>
-                    <p class="text-primary pt-5"> > SHOP NOW</p>
+                <div class="col-md-6 pl-5 pr-5">
+                    <h1 class="pt-lg-5 xxxlarge line-height-s d-none d-md-block"><small>Buy and sell unwanted <br> travel tickets in minutes</small></h1>
+                    <h1 class="pt-md-5 xxxlarge text-center line-height-s d-block d-md-none"><small>Buy and sell unwanted <br> travel tickets in minutes</small></h1>
+                    
+                    <p class="line-height-l pt-3">Whether you have an unused train ticket, hotel, booking, or travel voucher, get money back from your unwated booking, while passing on the savings to someone else.</p>
+                    <p class="text-primary pt-lg-5 d-none d-md-block"> > SHOP NOW</p>
+                    <p class="text-primary pt-lg-5 d-block d-md-none text-center"> > SHOP NOW</p>
                 </div>
-                <div class="col-sm-6 text-right">
+                <div class="col-md-6 text-center">
                    <img class="w-100" style="max-width:400px;height:auto" src="travel-image/pairs.jpg">
                 </div>
             </div>
@@ -137,203 +191,335 @@
 <!--Tickets carousel-->
         <div class="container">
             <h3 class="text-center d-none d-sm-block d-md-block d-lg-block" style="padding-bottom:30px">LATEST DEALS</h3>
-            <div class="row" style="padding-bottom: 0px;">
-                <div class="col-lg-1"></div>
+<!--PC-->            
+            <div class="row d-none d-lg-block" style="padding-bottom: 0px;">
                 <div class="col-lg-12 col-xs-12 col-sm-12">
-                    <div id="carouselExampleControls" class="carousel" data-ride="carousel">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
-                                <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleControls" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleControls" data-slide-to="2"></li>
-                            </ol>
+                            <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                        </ol>
                         <div class="carousel-inner">
       <!--1st group of pictures--->                          
-                                <div class="carousel-item active">
-                                    <div class="row">                         
-                                        <!--double room-->
-                                        <div class="card col-4">
-                                            <a href="travel-image/scenery-1.jpg" data-fancybox="images-preview" data-width="1000" data-height="1000" data-thumbs='{"autoStart":true}'><img class="card-img-top img-fluid" src="travel-image/scenery-1.jpg" alt="Card image cap"></a>      
-                                            
-                                            <!--大图-->          
-                                            <div style="display: none;">
-                                                <a href="hostel-image/doubleroom2.jpg" data-fancybox="images-preview" 
-                                                   data-width="1000" data-height="1000"
-                                                   data-thumb="hostel-image/doubleroom2.jpg"></a>
+                            <div class="carousel-item active">
+                                <div class="row">   
+                                        <div class="col-4">   
+                                            <div class="border">
+                                                <img class="img-fluid w-100" src="travel-image/scenery-1.jpg" alt="Card image cap">
                                                 
-                                                <a href="hostel-image/doubleroom5.jpg" data-fancybox="images-preview" 
-                                                   data-width="1000" data-height="1000"
-                                                   data-thumb="hostel-image/doubleroom5.jpg"></a>
-                                                
-                                                <a href="hostel-image/facilities-sm-1.jpeg" data-fancybox="images-preview" 
-                                                   data-width="1242" data-height="1674"
-                                                   data-thumb="hostel-image/facilities-sm-1.jpeg"></a>
-                                                
-                                                <a href="hostel-image/doubleroom4.jpg" data-fancybox="images-preview" 
-                                                   data-width="1000" data-height="1000"
-                                                   data-thumb="hostel-image/doubleroom4.jpg"></a>
-                                                
-                                                <a href="hostel-image/sink.jpg" data-fancybox="images-preview" 
-                                                   data-width="1000" data-height="1000"
-                                                   data-thumb="hostel-image/sink.jpg"></a>
-                                                
-                                                <a href="hostel-image/doubleroom5.jpg" data-fancybox="images-preview" 
-                                                   data-width="1000" data-height="1000"
-                                                   data-thumb="hostel-image/doubleroom5.jpg"></a>
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Flight</h5>
-                                                
-                                                <p class="card-text text-center">
-                                                    <span><i class="fas fa-user"></i> Manchester - Thailand flights 3rd Jan - 4th March 2019</span>
-                                                </p>
-                                                
-                                                <div class="row">
-                                                    <div class="card col-4">
-                                                        <img src="">
-                                                        <div class="card-body">
-                                                            <h5 class="card-title">Flight</h5>
-                                                        </div>
+                                                <div class="line-height-md">
+                                                    <p class="large pt-3 pl-3 pr-2"><i class="fas fa-plane"></i> Flight <br> <span class="small">Manchester - Thailand flights 3rd Jan - 4th March 2019</span></p>
+                                                </div>
+                                                <div class="row text-center pt-3 border-top border-bottom">
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-departure xlarge"></i></span>
+                                                        <p class="xsmall">23 Oct 2018<br>14:15</p>
                                                     </div>
-                                                    <div class="card col-4">
-                                                        <img src="">
-                                                        <div class="card-body">
-                                                            <h5 class="card-title">Flight</h5>
-                                                        </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-arrival xlarge"></i></span>
+                                                        <p class="xsmall">29 Oct 2018<br>09:15</p>
                                                     </div>
-                                                    <div class="card col-4">
-                                                        <img src="">
-                                                        <div class="card-body">
-                                                            <h5 class="card-title">Flight</h5>
-                                                        </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-user large-22"></i><i class="fas fa-user large-22"></i></span>
+                                                        <p class="xsmall">2 Adults</p>
                                                     </div>
                                                 </div>
-                                                
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <h5 class="card-title">Flight</h5> 
+                                                <div class="row pt-2 pl-md-3 pr-lg-5">
+                                                    <div class="col-5 col-xl-6">
+                                                        <p class="small-font xsmall-font text-center text-xl-left">£234.77</p> 
                                                     </div>
-                                                    <div class="col-3">
-                                                        <a href="https://www.booking.com/hotel/cn/yang-shuo-jiu-shan-she-tao-su-lu-she.en-gb.html#map_closed" href="javascript:;" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">Check Price</button></a>
+                                                    <div class="col-3 col-xl-3">
+                                                        <a href="" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">OFFER</button></a>
                                                     </div>
-                                                    <div class="col-3">
-                                                       <a href="https://www.booking.com/hotel/cn/yang-shuo-jiu-shan-she-tao-su-lu-she.en-gb.html#map_closed" href="javascript:;" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">Check Price</button></a>
+                                                    <div class="col-4 col-xl-3">
+                                                       <a href="" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">BUY <span class="hide-medium hide-small">NOW</span></button></a>
                                                     </div>
-                                                </div> 
+                                                </div>
                                             </div>
                                         </div>  
                                         
-                                        <!--twin room-->
-                                        <div class="card col-4">
-                                            <a href="travel-image/scenery-2.jpg" data-fancybox="images-preview-tr" data-width="1000" data-height="1000"data-thumbs='{"autoStart":true}'><img class="card-img-top img-fluid" src="travel-image/scenery-2.jpg" alt="Card image cap"></a>
-                                            
-                                            <!--大图-->
-                                            <div style="display: none;">
-                                                
-                                                <a href="hostel-image/twinroom2.jpg" data-fancybox="images-preview-tr" 
-                                                   data-width="1000" data-height="1000"
-                                                   data-thumb="hostel-image/twinroom2.jpg"></a>
-                                                
-                                                <a href="hostel-image/sink2.jpg" data-fancybox="images-preview-tr" 
-                                                   data-width="1000" data-height="1000"
-                                                   data-thumb="hostel-image/sink2.jpg"></a>
-                                                
-                                                <a href="hostel-image/facilities-sm-1.jpeg" data-fancybox="images-preview-tr" 
-                                                   data-width="1242" data-height="1674"
-                                                   data-thumb="hostel-image/facilities-sm-1.jpeg"></a>
-                                                
-                                                
+                                        <div class="col-4">   
+                                            <div class="card no-gutters">
+                                                <img class="card-img-top img-fluid" src="travel-image/scenery-2.jpg" alt="Card image cap">
+                                                <div class="line-height-md">
+                                                    <p class="large pt-3 pl-3 pr-2"><i class="fas fa-plane"></i> Flight <br> <span class="small">Manchester - Thailand flights 3rd Jan - 4th March 2019</span></p>
+                                                </div>
+                                                <div class="row text-center pt-3 border-top border-bottom">
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-departure xlarge"></i></span>
+                                                        <p class="xsmall">23 Oct 2018<br>14:15</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-arrival xlarge"></i></span>
+                                                        <p class="xsmall">29 Oct 2018<br>09:15</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-user large-22"></i><i class="fas fa-user large-22"></i></span>
+                                                        <p class="xsmall">2 Adults</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pl-md-3 pr-lg-5">
+                                                    <div class="col-5 col-xl-6">
+                                                        <p class="small-font xsmall-font text-center text-xl-left">£234.77</p> 
+                                                    </div>
+                                                    <div class="col-3 col-xl-3">
+                                                        <a href="" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">OFFER</button></a>
+                                                    </div>
+                                                    <div class="col-4 col-xl-3">
+                                                       <a href="" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">BUY <span class="hide-medium hide-small">NOW</span></button></a>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Twin room</h5>
-                                                
-                                                <p class="card-text">
-                                                    2 single beds <i class="fas fa-user"></i><i class="fas fa-user"></i><br>
-                                                    <small><span class="text-muted">
-                                                        <i class="fas fa-wifi"></i> Free Wifi
-                                                        <i class="fas fa-check"></i> Air conditioning <br>
-                                                        <i class="fas fa-shower"></i> Private bathroom <br>
-                                                        • Tumble dryer  • Cleaning products  • Drying rack for clothing  • Shower  • Hairdryer  • Free toiletries  • Toilet  • Slippers  • Toilet paper  • Electric kettle  • Towels</span></small>
-                                                </p>
-                                                <a href="https://www.booking.com/hotel/cn/yang-shuo-jiu-shan-she-tao-su-lu-she.en-gb.html#map_closed" href="javascript:;" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">Check Price</button></a>
-                                            </div>
-                                        </div>  
+                                        </div> 
                                         
-                                        <!--double room with balcony-->
-                                        <div class="card col-4">
-                                            <a href="travel-image/scenery-3.jpg" data-fancybox="images-preview-dbb" data-width="1000" data-height="1000"data-thumbs='{"autoStart":true}'><img class="card-img-top img-fluid" src="travel-image/scenery-3.jpg" alt="Card image cap"></a>
-                                            
-                                            <!--大图-->
-                                            <div style="display: none;">
-                                                <a href="hostel-image/doubleroom-balcony.jpg" data-fancybox="images-preview-dbb" 
-                                                   data-width="1000" data-height="1000"
-                                                   data-thumb="hostel-image/doubleroom-balcony.jpg"></a>
-                                                
-                                                <a href="hostel-image/doubleroom4.jpg" data-fancybox="images-preview-dbb" 
-                                                   data-width="1000" data-height="1000"
-                                                   data-thumb="hostel-image/doubleroom4.jpg"></a>
-                                                
-                                                <a href="hostel-image/sink3.jpg" data-fancybox="images-preview-dbb" 
-                                                   data-width="1000" data-height="1000"
-                                                   data-thumb="hostel-image/sink3.jpg"></a>
-                                                
-                                                <a href="hostel-image/facilities-sm-1.jpeg" data-fancybox="images-preview-dbb" 
-                                                   data-width="1242" data-height="1674"
-                                                   data-thumb="hostel-image/facilities-sm-1.jpeg"></a>
-                                                
-                                                <a href="hostel-image/sink.jpg" data-fancybox="images-preview-dbb" 
-                                                   data-width="1000" data-height="1000"
-                                                   data-thumb="hostel-image/sink.jpg"></a>
-                                                
-                                                <a href="hostel-image/doubleroom5.jpg" data-fancybox="images-preview-dbb" 
-                                                   data-width="1000" data-height="1000"
-                                                   data-thumb="hostel-image/doubleroom5.jpg"></a>
-                                            </div>
-                                            
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Double room with balcony</h5>
-                                                
-                                                <p class="card-text">
-                                                    1 double bed <i class="fas fa-user"></i><i class="fas fa-user"></i><br>
-                                                    <small><span class="text-muted">
-                                                        <i class="fas fa-wifi"></i> Free Wifi
-                                                        <i class="fas fa-check"></i> Air conditioning <br>
-                                                        <i class="fas fa-shower"></i> Private bathroom <br>
-                                                        • Tumble dryer  • Cleaning products  • Drying rack for clothing  • Shower  • Hairdryer  • Free toiletries  • Toilet  • Slippers  • Toilet paper  • Electric kettle  • Towels</span></small>
-                                                </p>
-                                                <a href="https://www.booking.com/hotel/cn/yang-shuo-jiu-shan-she-tao-su-lu-she.en-gb.html#map_closed" href="javascript:;" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">Check Price</button></a>
+                                        <div class="col-4">   
+                                            <div class="card no-gutters">
+                                                <img class="card-img-top img-fluid" src="travel-image/scenery-3.jpg" alt="Card image cap">
+                                                <div class="line-height-md">
+                                                    <p class="large pt-3 pl-3 pr-2"><i class="fas fa-plane"></i> Flight <br> <span class="small">Manchester - Thailand flights 3rd Jan - 4th March 2019</span></p>
+                                                </div>
+                                                <div class="row text-center pt-3 border-top border-bottom">
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-departure xlarge"></i></span>
+                                                        <p class="xsmall">23 Oct 2018<br>14:15</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-arrival xlarge"></i></span>
+                                                        <p class="xsmall">29 Oct 2018<br>09:15</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-user large-22"></i><i class="fas fa-user large-22"></i></span>
+                                                        <p class="xsmall">2 Adults</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pl-md-3 pr-lg-5">
+                                                    <div class="col-5 col-xl-6">
+                                                        <p class="small-font xsmall-font text-center text-xl-left">£234.77</p> 
+                                                    </div>
+                                                    <div class="col-3 col-xl-3">
+                                                        <a href="" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">OFFER</button></a>
+                                                    </div>
+                                                    <div class="col-4 col-xl-3">
+                                                       <a href="" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">BUY <span class="hide-medium hide-small">NOW</span></button></a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div> 
                                     </div>
                             </div>
-                            <!--2nd group of pictures--->  
+      <!--2nd group of pictures--->  
                             <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
-                                        <img class="d-block w-100" src="travel-image/scenery-1.jpg" alt="Two slide">
+                                <div class="row">   
+                                        <div class="col-4">   
+                                            <div class="card no-gutters">
+                                                <img class="card-img-top img-fluid" src="travel-image/scenery-4.jpg" alt="Card image cap">
+                                                <div class="line-height-md">
+                                                    <p class="large pt-3 pl-3 pr-2"><i class="fas fa-plane"></i> Flight <br> <span class="small">Manchester - Thailand flights 3rd Jan - 4th March 2019</span></p>
+                                                </div>
+                                                <div class="row text-center pt-3 border-top border-bottom">
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-departure xlarge"></i></span>
+                                                        <p class="xsmall">23 Oct 2018<br>14:15</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-arrival xlarge"></i></span>
+                                                        <p class="xsmall">29 Oct 2018<br>09:15</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-user large-22"></i><i class="fas fa-user large-22"></i></span>
+                                                        <p class="xsmall">2 Adults</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pl-md-3 pr-lg-5">
+                                                    <div class="col-5 col-xl-6">
+                                                        <p class="small-font xsmall-font text-center text-xl-left">£234.77</p> 
+                                                    </div>
+                                                    <div class="col-3 col-xl-3">
+                                                        <a href="" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">OFFER</button></a>
+                                                    </div>
+                                                    <div class="col-4 col-xl-3">
+                                                       <a href="" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">BUY <span class="hide-medium hide-small">NOW</span></button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        
+                                        <div class="col-4">   
+                                            <div class="card no-gutters">
+                                                <img class="card-img-top img-fluid" src="travel-image/scenery-5.jpg" alt="Card image cap">
+                                                <div class="line-height-md">
+                                                    <p class="large pt-3 pl-3 pr-2"><i class="fas fa-plane"></i> Flight <br> <span class="small">Manchester - Thailand flights 3rd Jan - 4th March 2019</span></p>
+                                                </div>
+                                                <div class="row text-center pt-3 border-top border-bottom">
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-departure xlarge"></i></span>
+                                                        <p class="xsmall">23 Oct 2018<br>14:15</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-arrival xlarge"></i></span>
+                                                        <p class="xsmall">29 Oct 2018<br>09:15</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-user large-22"></i><i class="fas fa-user large-22"></i></span>
+                                                        <p class="xsmall">2 Adults</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pl-md-3 pr-lg-5">
+                                                    <div class="col-5 col-xl-6">
+                                                        <p class="small-font xsmall-font text-center text-xl-left">£234.77</p> 
+                                                    </div>
+                                                    <div class="col-3 col-xl-3">
+                                                        <a href="" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">OFFER</button></a>
+                                                    </div>
+                                                    <div class="col-4 col-xl-3">
+                                                       <a href="" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">BUY <span class="hide-medium hide-small">NOW</span></button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        
+                                        <div class="col-4">   
+                                            <div class="card no-gutters">
+                                                <img class="card-img-top img-fluid" src="travel-image/scenery-6.jpg" alt="Card image cap">
+                               <div class="line-height-md">
+                                                    <p class="large pt-3 pl-3 pr-2"><i class="fas fa-plane"></i> Flight <br> <span class="small">Manchester - Thailand flights 3rd Jan - 4th March 2019</span></p>
+                                                </div>
+                                                <div class="row text-center pt-3 border-top border-bottom">
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-departure xlarge"></i></span>
+                                                        <p class="xsmall">23 Oct 2018<br>14:15</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-arrival xlarge"></i></span>
+                                                        <p class="xsmall">29 Oct 2018<br>09:15</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-user large-22"></i><i class="fas fa-user large-22"></i></span>
+                                                        <p class="xsmall">2 Adults</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pl-md-3 pr-lg-5">
+                                                    <div class="col-5 col-xl-6">
+                                                        <p class="small-font xsmall-font text-center text-xl-left">£234.77</p> 
+                                                    </div>
+                                                    <div class="col-3 col-xl-3">
+                                                        <a href="" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">OFFER</button></a>
+                                                    </div>
+                                                    <div class="col-4 col-xl-3">
+                                                       <a href="" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">BUY <span class="hide-medium hide-small">NOW</span></button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
                                     </div>
-                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
-                                        <img class="d-block w-100" src="travel-image/scenery-3.jpg" alt="Two slide">
-                                    </div>
-                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
-                                        <img class="d-block w-100" src="travel-image/scenery-2.jpg" alt="Two slide">
-                                    </div>
-                                </div>
                             </div>
-                            <!--3rd group of pictures--->  
+      <!--3rd group of pictures--->  
                             <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
-                                        <img class="d-block w-100" src="travel-image/scenery-1.jpg">
+                                <div class="row">   
+                                        <div class="col-4">   
+                                            <div class="card no-gutters">
+                                                <img class="card-img-top img-fluid" src="travel-image/scenery-7.jpg" alt="Card image cap">
+                                                <div class="line-height-md">
+                                                    <p class="large pt-3 pl-3 pr-2"><i class="fas fa-plane"></i> Flight <br> <span class="small">Manchester - Thailand flights 3rd Jan - 4th March 2019</span></p>
+                                                </div>
+                                                <div class="row text-center pt-3 border-top border-bottom">
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-departure xlarge"></i></span>
+                                                        <p class="xsmall">23 Oct 2018<br>14:15</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-arrival xlarge"></i></span>
+                                                        <p class="xsmall">29 Oct 2018<br>09:15</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-user large-22"></i><i class="fas fa-user large-22"></i></span>
+                                                        <p class="xsmall">2 Adults</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pl-md-3 pr-lg-5">
+                                                    <div class="col-5 col-xl-6">
+                                                        <p class="small-font xsmall-font text-center text-xl-left">£234.77</p> 
+                                                    </div>
+                                                    <div class="col-3 col-xl-3">
+                                                        <a href="" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">OFFER</button></a>
+                                                    </div>
+                                                    <div class="col-4 col-xl-3">
+                                                       <a href="" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">BUY <span class="hide-medium hide-small">NOW</span></button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        
+                                        <div class="col-4">   
+                                            <div class="card no-gutters">
+                                                <img class="card-img-top img-fluid" src="travel-image/scenery-8.jpg" alt="Card image cap">
+                                                <div class="line-height-md">
+                                                    <p class="large pt-3 pl-3 pr-2"><i class="fas fa-plane"></i> Flight <br> <span class="small">Manchester - Thailand flights 3rd Jan - 4th March 2019</span></p>
+                                                </div>
+                                                <div class="row text-center pt-3 border-top border-bottom">
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-departure xlarge"></i></span>
+                                                        <p class="xsmall">23 Oct 2018<br>14:15</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-arrival xlarge"></i></span>
+                                                        <p class="xsmall">29 Oct 2018<br>09:15</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-user large-22"></i><i class="fas fa-user large-22"></i></span>
+                                                        <p class="xsmall">2 Adults</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pl-md-3 pr-lg-5">
+                                                    <div class="col-5 col-xl-6">
+                                                        <p class="small-font xsmall-font text-center text-xl-left">£234.77</p> 
+                                                    </div>
+                                                    <div class="col-3 col-xl-3">
+                                                        <a href="" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">OFFER</button></a>
+                                                    </div>
+                                                    <div class="col-4 col-xl-3">
+                                                       <a href="" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">BUY <span class="hide-medium hide-small">NOW</span></button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        
+                                        <div class="col-4">   
+                                            <div class="card no-gutters">
+                                                <img class="card-img-top img-fluid" src="travel-image/scenery-9.jpg" alt="Card image cap">
+                                                <div class="line-height-md">
+                                                    <p class="large pt-3 pl-3 pr-2"><i class="fas fa-plane"></i> Flight <br> <span class="small">Manchester - Thailand flights 3rd Jan - 4th March 2019</span></p>
+                                                </div>
+                                                <div class="row text-center pt-3 border-top border-bottom">
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-departure xlarge"></i></span>
+                                                        <p class="xsmall">23 Oct 2018<br>14:15</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-arrival xlarge"></i></span>
+                                                        <p class="xsmall">29 Oct 2018<br>09:15</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-user large-22"></i><i class="fas fa-user large-22"></i></span>
+                                                        <p class="xsmall">2 Adults</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pl-md-3 pr-lg-5">
+                                                    <div class="col-5 col-xl-6">
+                                                        <p class="small-font xsmall-font text-center text-xl-left">£234.77</p> 
+                                                    </div>
+                                                    <div class="col-3 col-xl-3">
+                                                        <a href="" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">OFFER</button></a>
+                                                    </div>
+                                                    <div class="col-4 col-xl-3">
+                                                       <a href="" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">BUY <span class="hide-medium hide-small">NOW</span></button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
                                     </div>
-                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
-                                        <img class="d-block w-100" src="travel-image/scenery-3.jpg">
-                                    </div>
-                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
-                                        <img class="d-block w-100" src="travel-image/scenery-2.jpg">
-                                    </div>
-                                </div>  
                             </div>
-                            
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -346,77 +532,340 @@
                     </div>
                 </div>
             </div>  
+<!--Mobile-->            
+            <div class="row d-block d-lg-none" style="padding-bottom: 0px;">
+                <div class="col-lg-12 col-xs-12 col-sm-12">
+                    <div id="carouselExampleControls02" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleControls02" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleControls02" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleControls02" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+      <!--1st group of pictures--->                          
+                            <div class="carousel-item active">
+                                <div class="row no-gutters">   
+                                        <div class="col-6 pr-2">   
+                                            <div class="border">
+                                                <img class="img-fluid w-100" src="travel-image/scenery-1.jpg" alt="Card image cap">
+                                                <div class="line-height-md">
+                                                    <p class="pt-2 pl-1 pt-sm-3 pl-sm-3"><i class="fas fa-plane"></i> Flight <br> <span class="xsmall">Manchester - Thailand <br>3rd Jan - 4th March 2019</span></p>
+                                                </div>
+                                                <div class="row text-center pt-2 pt-sm-3 border-top border-bottom no-gutters">
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-departure"></i></span>
+                                                        <p class="xsmall">23 Oct 2018<br>14:15</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-arrival"></i></span>
+                                                        <p class="xsmall">29 Oct 2018<br>09:15</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-user"></i><i class="fas fa-user"></i></span>
+                                                        <p class="xsmall">2 Adults</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pt-sm-3 border-top border-bottom no-gutters">
+                                                    <div class="col-4 col-sm-5 text-sm-left">
+                                                        <p class="xxsmall pt-1 pl-1 pl-sm-2">£234.77</p>
+                                                    </div>
+                                                    <div class="col-4 col-sm-3 text-right">
+                                                        <a href="" class=""><span class="xsmall pt-1 pb-1 pr-2 pl-2 border border-info bg-info text-white">OFFER</span></a>
+                                                    </div>
+                                                    <div class="col-4 col-sm-3 text-right pr-2 pr-sm-0">
+                                                        <a href="" class=""><span class="xsmall pt-1 pb-1 pr-2 pl-2 border border-info bg-info text-white">BUY</span></a>
+                                                    </div>
+                                                </div>
+                                                <!--
+                                                <div class="row pt-2 pl-3 pr-5 no-gutters text-center">
+                                                    <div class="col-4 col-sm-5 col-xl-6">
+                                                        <p class="small-font">£234.77</p> 
+                                                    </div>
+                                                    <div class="col-4 col-sm-3 col-xl-3">
+                                                        <a href="" class="alert-info alert-link"><span class="xsmall text-center">OFFER</span></a>
+                                                    </div>
+                                                    <div class="col-4 col-sm-3 col-xl-3">
+                                                       <a href="" class="alert-info alert-link"><span class="xxsmall text-center">BUY</span></a>
+                                                    </div>
+                                                </div>-->
+                                            </div>
+                                        </div>  
+                                        
+                                        <div class="col-6 pl-2">   
+                                            <div class="card no-gutters">
+                                                <img class="card-img-top img-fluid" src="travel-image/scenery-2.jpg" alt="Card image cap">
+                                                <div class="line-height-md">
+                                                    <p class="large pt-3 pl-3"><i class="fas fa-plane"></i> Flight <br> <span class="small">Manchester - Thailand flights 3rd Jan - 4th March 2019</span></p>
+                                                </div>
+                                                <div class="row text-center pt-3 border-top border-bottom">
+                                                        <div class="col-4">
+                                                            <span><i class="fas fa-plane-departure xlarge"></i></span>
+                                                            <p class="xsmall">23 Oct 2018<br>14:15</p>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <span><i class="fas fa-plane-arrival xlarge"></i></span>
+                                                            <p class="xsmall">29 Oct 2018<br>09:15</p>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <span><i class="fas fa-user large-22"></i><i class="fas fa-user large-22"></i></span>
+                                                            <p class="xsmall">2 Adults</p>
+                                                        </div>
+                                                    </div>
+                                                <div class="row pt-2 pl-3 pr-5">
+                                                    <div class="col-5 col-xl-6">
+                                                        <p class="small-font">£234.77</p> 
+                                                    </div>
+                                                    <div class="col-3 col-xl-3 text-right">
+                                                        <a href="https://www.booking.com/hotel/cn/yang-shuo-jiu-shan-she-tao-su-lu-she.en-gb.html#map_closed" href="javascript:;" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">OFFER</button></a>
+                                                    </div>
+                                                    <div class="col-3 col-xl-3 text-right">
+                                                       <a href="https://www.booking.com/hotel/cn/yang-shuo-jiu-shan-she-tao-su-lu-she.en-gb.html#map_closed" href="javascript:;" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">BUY NOW</button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                            </div>
+      <!--2nd group of pictures--->  
+                            <div class="carousel-item">
+                                <div class="row">   
+                                        <div class="col-6">   
+                                            <div class="card no-gutters">
+                                                <img class="card-img-top img-fluid" src="travel-image/scenery-4.jpg" alt="Card image cap">
+                                                <div class="line-height-md">
+                                                    <p class="large pt-3 pl-3"><i class="fas fa-plane"></i> Flight <br> <span class="small">Manchester - Thailand flights 3rd Jan - 4th March 2019</span></p>
+                                                </div>
+                                                <div class="row text-center pt-3 border-top border-bottom">
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-departure xlarge"></i></span>
+                                                        <p class="xsmall">23 Oct 2018<br>14:15</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-arrival xlarge"></i></span>
+                                                        <p class="xsmall">29 Oct 2018<br>09:15</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-user large-22"></i><i class="fas fa-user large-22"></i></span>
+                                                        <p class="xsmall">2 Adults</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pl-3 pr-5">
+                                                    <div class="col-6">
+                                                        <p class="">£234.77</p> 
+                                                    </div>
+                                                    <div class="col-3 text-right">
+                                                        <a href="https://www.booking.com/hotel/cn/yang-shuo-jiu-shan-she-tao-su-lu-she.en-gb.html#map_closed" href="javascript:;" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">OFFER</button></a>
+                                                    </div>
+                                                    <div class="col-3 text-right">
+                                                       <a href="https://www.booking.com/hotel/cn/yang-shuo-jiu-shan-she-tao-su-lu-she.en-gb.html#map_closed" href="javascript:;" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">BUY NOW</button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        
+                                        <div class="col-6">   
+                                            <div class="card no-gutters">
+                                                <img class="card-img-top img-fluid" src="travel-image/scenery-5.jpg" alt="Card image cap">
+                                                <div class="line-height-md">
+                                                    <p class="large pt-3 pl-3"><i class="fas fa-plane"></i> Flight <br> <span class="small">Manchester - Thailand flights 3rd Jan - 4th March 2019</span></p>
+                                                </div>
+                                                <div class="row text-center pt-3 border-top border-bottom">
+                                                        <div class="col-4">
+                                                            <span><i class="fas fa-plane-departure xlarge"></i></span>
+                                                            <p class="xsmall">23 Oct 2018<br>14:15</p>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <span><i class="fas fa-plane-arrival xlarge"></i></span>
+                                                            <p class="xsmall">29 Oct 2018<br>09:15</p>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <span><i class="fas fa-user large-22"></i><i class="fas fa-user large-22"></i></span>
+                                                            <p class="xsmall">2 Adults</p>
+                                                        </div>
+                                                    </div>
+                                                <div class="row pt-2 pl-3 pr-5">
+                                                    <div class="col-6">
+                                                        <p class="">£234.77</p> 
+                                                    </div>
+                                                    <div class="col-3 text-right">
+                                                        <a href="https://www.booking.com/hotel/cn/yang-shuo-jiu-shan-she-tao-su-lu-she.en-gb.html#map_closed" href="javascript:;" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">OFFER</button></a>
+                                                    </div>
+                                                    <div class="col-3 text-right">
+                                                       <a href="https://www.booking.com/hotel/cn/yang-shuo-jiu-shan-she-tao-su-lu-she.en-gb.html#map_closed" href="javascript:;" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">BUY NOW</button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+      <!--3rd group of pictures--->  
+                            <div class="carousel-item">
+                                <div class="row">   
+                                        <div class="col-6">   
+                                            <div class="card no-gutters">
+                                                <img class="card-img-top img-fluid" src="travel-image/scenery-7.jpg" alt="Card image cap">
+                                                <div class="line-height-md">
+                                                    <p class="large pt-3 pl-3"><i class="fas fa-plane"></i> Flight <br> <span class="small">Manchester - Thailand flights 3rd Jan - 4th March 2019</span></p>
+                                                </div>
+                                                <div class="row text-center pt-3 border-top border-bottom">
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-departure xlarge"></i></span>
+                                                        <p class="xsmall">23 Oct 2018<br>14:15</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-plane-arrival xlarge"></i></span>
+                                                        <p class="xsmall">29 Oct 2018<br>09:15</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span><i class="fas fa-user large-22"></i><i class="fas fa-user large-22"></i></span>
+                                                        <p class="xsmall">2 Adults</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pl-3 pr-5">
+                                                    <div class="col-6">
+                                                        <p class="">£234.77</p> 
+                                                    </div>
+                                                    <div class="col-3 text-right">
+                                                        <a href="https://www.booking.com/hotel/cn/yang-shuo-jiu-shan-she-tao-su-lu-she.en-gb.html#map_closed" href="javascript:;" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">OFFER</button></a>
+                                                    </div>
+                                                    <div class="col-3 text-right">
+                                                       <a href="https://www.booking.com/hotel/cn/yang-shuo-jiu-shan-she-tao-su-lu-she.en-gb.html#map_closed" href="javascript:;" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">BUY NOW</button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        
+                                        <div class="col-6">   
+                                            <div class="card no-gutters">
+                                                <img class="card-img-top img-fluid" src="travel-image/scenery-8.jpg" alt="Card image cap">
+                                                <div class="line-height-md">
+                                                    <p class="large pt-3 pl-3"><i class="fas fa-plane"></i> Flight <br> <span class="small">Manchester - Thailand flights 3rd Jan - 4th March 2019</span></p>
+                                                </div>
+                                                <div class="row text-center pt-3 border-top border-bottom">
+                                                        <div class="col-4">
+                                                            <span><i class="fas fa-plane-departure xlarge"></i></span>
+                                                            <p class="xsmall">23 Oct 2018<br>14:15</p>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <span><i class="fas fa-plane-arrival xlarge"></i></span>
+                                                            <p class="xsmall">29 Oct 2018<br>09:15</p>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <span><i class="fas fa-user large-22"></i><i class="fas fa-user large-22"></i></span>
+                                                            <p class="xsmall">2 Adults</p>
+                                                        </div>
+                                                    </div>
+                                                <div class="row pt-2 pl-3 pr-5">
+                                                    <div class="col-6">
+                                                        <p class="">£234.77</p> 
+                                                    </div>
+                                                    <div class="col-3 text-right">
+                                                        <a href="https://www.booking.com/hotel/cn/yang-shuo-jiu-shan-she-tao-su-lu-she.en-gb.html#map_closed" href="javascript:;" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">OFFER</button></a>
+                                                    </div>
+                                                    <div class="col-3 text-right">
+                                                       <a href="https://www.booking.com/hotel/cn/yang-shuo-jiu-shan-she-tao-su-lu-she.en-gb.html#map_closed" href="javascript:;" class="alert-info alert-link"><button type="button" class="btn btn-info btn-sm">BUY NOW</button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls02" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls02" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>  
+            
         </div>
         
-        <!--2nd parallax image with Contact text-->
-        <div class="bgimg-2 contact-image opacity-min margin-64">
+    <!--2nd parallax image with Contact text-->
+        <div class="pt-5 pb-5">
+            <img src="travel-image/banner-1.jpg" style="height:600px;width:100%">
+        </div>
+        <!--<div class="bgimg-2 contact-image opacity-min margin-64">
             <div class="display-middle ">
                 <span class="xxlarge text-white letter-spacing">CONTACT</span> 
             </div>
-        </div> 
+        </div> -->
         
-        <!--PC-nice pictures of hostel:3 carousel-->
-        <div class="container d-none d-sm-block d-md-block d-lg-block">
-            <h3 class="text-center d-none d-sm-block d-md-block d-lg-block" style="padding-bottom:30px">LADDER INN</h3>
+<!--Most popular destinations-->
+        <div class="container pb-5 d-none d-sm-block d-md-block d-lg-block">
+            <h3 class="text-center d-none d-sm-block d-md-block d-lg-block" style="padding-bottom:30px">MOST POPULAR DESTINATIONS</h3>
             <div class="row" style="padding-bottom: 0px;">
                 <div class="col-lg-1"></div>
                 <div class="col-lg-12 col-xs-12 col-sm-12">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div id="carouselExampleControls01" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleControls" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleControls01" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleControls01" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleControls01" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner">
                             <!--1st group of pictures--->                          
                             <div class="carousel-item active">
                                 <div class="row">
-                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
-                                        <img class="d-block w-100" src="travel-image/scenery-1.jpg" alt="First slide" >
+                                    <div class="col-lg-3 col-xs-3 col-sm-3 p-3">
+                                        <img class="d-block w-100" src="travel-image/france-1.jpg" alt="First slide" >
                                     </div>
-                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
-                                        <img class="d-block w-100" src="travel-image/scenery-2.jpg" alt="First slide">
+                                    <div class="col-lg-3 col-xs-3 col-sm-3 p-3">
+                                        <img class="d-block w-100" src="travel-image/new-york-1.jpg" alt="First slide">
                                     </div>
-                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
-                                        <img class="d-block w-100" src="travel-image/scenery-3.jpg" alt="First slide">
+                                    <div class="col-lg-3 col-xs-3 col-sm-3 p-3">
+                                        <img class="d-block w-100" src="travel-image/australia-1.jpg" alt="First slide">
+                                    </div>
+                                     <div class="col-lg-3 col-xs-3 col-sm-3 p-3">
+                                        <img class="d-block w-100" src="travel-image/roma-1.jpg" alt="First slide">
                                     </div>
                                 </div>
                             </div>
                             <!--2nd group of pictures--->  
                             <div class="carousel-item">
                                 <div class="row">
-                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
-                                        <img class="d-block w-100" src="travel-image/scenery-1.jpg" alt="Two slide">
+                                    <div class="col-lg-3 col-xs-3 col-sm-3 p-3">
+                                        <img class="d-block w-100" src="travel-image/france-1.jpg" alt="First slide" >
                                     </div>
-                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
-                                        <img class="d-block w-100" src="travel-image/scenery-3.jpg" alt="Two slide">
+                                    <div class="col-lg-3 col-xs-3 col-sm-3 p-3">
+                                        <img class="d-block w-100" src="travel-image/new-york-1.jpg" alt="First slide">
                                     </div>
-                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
-                                        <img class="d-block w-100" src="travel-image/scenery-2.jpg" alt="Two slide">
+                                    <div class="col-lg-3 col-xs-3 col-sm-3 p-3">
+                                        <img class="d-block w-100" src="travel-image/australia-1.jpg" alt="First slide">
+                                    </div>
+                                     <div class="col-lg-3 col-xs-3 col-sm-3 p-3">
+                                        <img class="d-block w-100" src="travel-image/roma-1.jpg" alt="First slide">
                                     </div>
                                 </div>
                             </div>
                             <!--3rd group of pictures--->  
                             <div class="carousel-item">
                                 <div class="row">
-                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
-                                        <img class="d-block w-100" src="travel-image/scenery-1.jpg">
+                                    <div class="col-lg-3 col-xs-3 col-sm-3 p-3">
+                                        <img class="d-block w-100" src="travel-image/france-1.jpg" alt="First slide" >
                                     </div>
-                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
-                                        <img class="d-block w-100" src="travel-image/scenery-3.jpg">
+                                    <div class="col-lg-3 col-xs-3 col-sm-3 p-3">
+                                        <img class="d-block w-100" src="travel-image/new-york-1.jpg" alt="First slide">
                                     </div>
-                                    <div class="col-lg-4 col-xs-4 col-sm-4 p-3">
-                                        <img class="d-block w-100" src="travel-image/scenery-2.jpg">
+                                    <div class="col-lg-3 col-xs-3 col-sm-3 p-3">
+                                        <img class="d-block w-100" src="travel-image/australia-1.jpg" alt="First slide">
                                     </div>
-                                </div>  
+                                     <div class="col-lg-3 col-xs-3 col-sm-3 p-3">
+                                        <img class="d-block w-100" src="travel-image/roma-1.jpg" alt="First slide">
+                                    </div>
+                                </div> 
                             </div>
                             
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <a class="carousel-control-prev" href="#carouselExampleControls01" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <a class="carousel-control-next" href="#carouselExampleControls01" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
