@@ -28,10 +28,8 @@
             .hover-opacity-on:hover {opacity:0.8}
             .margin-64{margin-top:64px}
             
-            .bgimg-1,.bgimg-2,.bgimg-3 {background-attachment: fixed;background-size:cover;background-repeat:no-repeat;background-position:center;}
+            .bgimg-1{background-attachment: fixed;background-size:cover;background-repeat:no-repeat;background-position:center;}
             .bgimg-1 { background-image:url(travel-image/landscape-2.jpg);min-height:100%;}
-            .bgimg-2 {background-image:url(travel-image/banner-1.jpg);min-height:400px;}
-            
             
             .padding-large {padding:12px 24px}
             
@@ -79,6 +77,7 @@
             }
             
             .contact-image {position:relative;height:400px;}
+            #tothetop {position:fixed;bottom:20px;right:25px;text-decoration: none!important;border:1px solid #FFFFFF;border-radius:4px;background-color:#FFFFFF;opacity:0.7;}
             
             @media (max-width:700px) {.hide-small {display:none!important};}
             @media (max-width:992px) and (min-width:701px) {.hide-medium {display:none!important}}
@@ -103,42 +102,42 @@
     <body>
         
 <!--navbar--> 
-        <nav class="navbar navbar-expand-md navbar-dark bg-info opacity-min">
+        <nav id="menu" class="navbar navbar-expand-md navbar-dark bg-info opacity-min">
             <a class="navbar-brand text-white hover-purple transition pr-1 pl-1 rounded" href="#">TRAVEL</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar7">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             
             <div class="collapse navbar-collapse justify-content-stretch" id="navbar7">
-                <ul class="navbar-nav ml-auto pr-4 pt-3">
+                <ul class="navbar-nav ml-auto pr-2 pr-lg-4 pt-3">
                     <li class="nav-item">
                         <a class="nav-link" href="#"><p class="text-white large hover-purple transition pr-1 pl-1 rounded">HOME</p><span class="sr-only">Home</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="//codeply.com"><p class="text-white large hover-purple transition pr-1 pl-1 rounded">DEALS</p></a>
+                        <a class="nav-link" href="#deals"><p class="text-white large hover-purple transition pr-1 pl-1 rounded">DEALS</p></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><p class="text-white large hover-purple transition pr-1 pl-1 rounded">ABOUT</p></a>
+                        <a class="nav-link" href="#about"><p class="text-white large hover-purple transition pr-1 pl-1 rounded">ABOUT</p></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="//codeply.com"><p class="text-white large hover-purple transition pr-1 pl-1 rounded">CONTACT</p></a>
+                        <a class="nav-link" href="#contact"><p class="text-white large hover-purple transition pr-1 pl-1 rounded">CONTACT</p></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><p class="text-white large hover-purple transition pr-1 pl-1 rounded">DESTINATIONS</p></a>
+                        <a class="nav-link" href="#destination"><p class="text-white large hover-purple transition pr-1 pl-1 rounded">DESTINATIONS</p></a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <button class="btn btn-sm bg-purple text-white hover-white hover-black mr-3 transition" type="submit">BROWSE</button>
-                    <button class="btn btn-sm bg-purple text-white hover-white hover-black mr-3 transition" type="submit">SELL</button>
+                <form class="form-inline my-2 my-sm-0">
+                    <a href="#"><button class="btn btn-sm bg-purple text-white hover-white hover-black mr-1 mr-xl-3 transition" type="submit">BROWSE</button></a>
+                    <a href="#deals"><button class="btn btn-sm bg-purple text-white hover-white hover-black mr-1 mr-xl-3 transition" type="submit">SELL</button></a>
                 </form>
             </div>
         </nav>
     
 <!--banner-->    
-        <div class="header-container bgimg-1 opacity-min display-container" id="home">
-            <div class="text-center pt-l pt-s pt-md">
-                <h1><span class="text-white padding-large xxxxlarge letter-spacing-md">Unlocking the <br> world of travel </span></h1>
-                <p><span class="text-white padding-large letter-spacing-s">Prebooked and unwanted travel plans, flignts, hotels, holidays, cruises and more </span></p>
+      <div class="header-container bgimg-1 opacity-min display-container" id="home">
+            <div class="text-center">
+                <h1 class="pr-1 pt-l pt-s pt-md text-white padding-large xxxxlarge letter-spacing-s"><span class="pr-3 pr-md-0">Unlocking</span> the <br> world of travel </h1>
+                <p><span class="pr-1 pl-1 text-white padding-large letter-spacing-s">Prebooked and unwanted travel plans, flignts, hotels, holidays, cruises and more </span></p>
                 <p><span class="text-white padding-large letter-spacing-s">I AM LOOKING FOR... </span></p>
                 
                 <table class="mx-auto hide-small">
@@ -174,29 +173,30 @@
                         <td><button class="btn bg-purple text-white hover-white hover-black padding-btn padding-btn-md mr-3 xsmall" type="submit"><i class="fas fa-ticket-alt xsmall"></i> VOUCHERS</button></td>
                     </tr>
                 </table>
+                <p class="pt-4 d-none d-md-block"><span class="text-white padding-large letter-spacing-s">>I WANT TO BROWSE ALL </span></p>
             </div>     
         </div>
         
 <!--introduction-->
-        <div id="contact" class="container " style="padding-top:64px;padding-bottom:40px">   
+        <div id="about" class="container " style="padding-top:64px;padding-bottom:40px">   
             <div class="row">
                 <div class="col-md-6 pl-5 pr-5">
                     <h1 class="pt-lg-5 xxxlarge line-height-s d-none d-md-block"><small>Buy and sell unwanted <br> travel tickets in minutes</small></h1>
                     <h1 class="pt-md-5 xxxlarge text-center line-height-s d-block d-md-none"><small>Buy and sell unwanted <br> travel tickets in minutes</small></h1>
                     
                     <p class="line-height-l pt-3">Whether you have an unused train ticket, hotel, booking, or travel voucher, get money back from your unwated booking, while passing on the savings to someone else.</p>
-                    <a href="" class="link-0"><p class="text-purple pt-lg-5 d-none d-md-block"> > SHOP NOW</p></a>
+                    <a href="#deals" class="link-0"><p class="text-purple pt-lg-5 d-none d-md-block"> > SHOP NOW</p></a>
                     <a href="" class="link-0"><p class="text-purple pt-lg-5 d-block d-md-none text-center"> > SHOP NOW</p></a>
                 </div>
                 <div class="col-md-6 text-center">
-                   <img class="w-100" style="max-width:400px;height:auto" src="travel-image/pairs.jpg">
+                   <img class="w-100 rounded" style="max-width:400px;height:auto" src="travel-image/pairs.jpg">
                 </div>
             </div>
         </div>
         
 <!--Tickets carousel-->
         <div class="container">
-            <h3 class="text-purple text-center d-none d-sm-block d-md-block d-lg-block" style="padding-bottom:30px">LATEST DEALS</h3>
+            <h3 id="deals" class="text-purple text-center d-none d-sm-block d-md-block d-lg-block" style="padding-bottom:30px">LATEST DEALS</h3>
 <!--PC-->            
             <div class="row d-none d-lg-block" style="padding-bottom: 0px;">
                 <div class="col-lg-12 col-xs-12 col-sm-12">
@@ -213,7 +213,7 @@
                                 <div class="row">   
                                         <div class="col-4">   
                                             <div class="border">
-                                                <img class="img-fluid w-100" src="travel-image/scenery-1.jpg" alt="Card image cap">
+                                                <img class="img-fluid w-100 rounded opacity hover-opacity-off" src="travel-image/scenery-1.jpg" alt="Card image cap">
                                                 
                                                 <div class="line-height-md">
                                                     <p class="large pt-3 pl-3 pr-2"><i class="fas fa-plane"></i> Flight <br> <span class="small">Manchester - Thailand flights 3rd Jan - 4th March 2019</span></p>
@@ -248,7 +248,7 @@
                                         
                                         <div class="col-4">   
                                             <div class="card no-gutters">
-                                                <img class="card-img-top img-fluid" src="travel-image/scenery-2.jpg" alt="Card image cap">
+                                                <img class="card-img-top img-fluid rounded opacity hover-opacity-off" src="travel-image/scenery-2.jpg" alt="Card image cap">
                                                 <div class="line-height-md">
                                                     <p class="large pt-3 pl-3 pr-2"><i class="fas fa-plane"></i> Flight <br> <span class="small">Manchester - Thailand flights 3rd Jan - 4th March 2019</span></p>
                                                 </div>
@@ -282,7 +282,7 @@
                                         
                                         <div class="col-4">   
                                             <div class="card no-gutters">
-                                                <img class="card-img-top img-fluid" src="travel-image/scenery-3.jpg" alt="Card image cap">
+                                                <img class="card-img-top img-fluid rounded opacity hover-opacity-off" src="travel-image/scenery-3.jpg" alt="Card image cap">
                                                 <div class="line-height-md">
                                                     <p class="large pt-3 pl-3 pr-2"><i class="fas fa-plane"></i> Flight <br> <span class="small">Manchester - Thailand flights 3rd Jan - 4th March 2019</span></p>
                                                 </div>
@@ -320,7 +320,7 @@
                                 <div class="row">   
                                         <div class="col-4">   
                                             <div class="card no-gutters">
-                                                <img class="card-img-top img-fluid" src="travel-image/scenery-4.jpg" alt="Card image cap">
+                                                <img class="card-img-top img-fluid rounded opacity hover-opacity-off" src="travel-image/scenery-4.jpg" alt="Card image cap">
                                                 <div class="line-height-md">
                                                     <p class="large pt-3 pl-3 pr-2"><i class="fas fa-plane"></i> Flight <br> <span class="small">Manchester - Thailand flights 3rd Jan - 4th March 2019</span></p>
                                                 </div>
@@ -354,7 +354,7 @@
                                         
                                         <div class="col-4">   
                                             <div class="card no-gutters">
-                                                <img class="card-img-top img-fluid" src="travel-image/scenery-5.jpg" alt="Card image cap">
+                                                <img class="card-img-top img-fluid rounded opacity hover-opacity-off" src="travel-image/scenery-5.jpg" alt="Card image cap">
                                                 <div class="line-height-md">
                                                     <p class="large pt-3 pl-3 pr-2"><i class="fas fa-plane"></i> Flight <br> <span class="small">Manchester - Thailand flights 3rd Jan - 4th March 2019</span></p>
                                                 </div>
@@ -388,7 +388,7 @@
                                         
                                         <div class="col-4">   
                                             <div class="card no-gutters">
-                                                <img class="card-img-top img-fluid" src="travel-image/scenery-6.jpg" alt="Card image cap">
+                                                <img class="card-img-top img-fluid rounded opacity hover-opacity-off" src="travel-image/scenery-6.jpg" alt="Card image cap">
                                <div class="line-height-md">
                                                     <p class="large pt-3 pl-3 pr-2"><i class="fas fa-plane"></i> Flight <br> <span class="small">Manchester - Thailand flights 3rd Jan - 4th March 2019</span></p>
                                                 </div>
@@ -426,7 +426,7 @@
                                 <div class="row">   
                                         <div class="col-4">   
                                             <div class="card no-gutters">
-                                                <img class="card-img-top img-fluid" src="travel-image/scenery-7.jpg" alt="Card image cap">
+                                                <img class="card-img-top img-fluid rounded opacity hover-opacity-off" src="travel-image/scenery-7.jpg" alt="Card image cap">
                                                 <div class="line-height-md">
                                                     <p class="large pt-3 pl-3 pr-2"><i class="fas fa-plane"></i> Flight <br> <span class="small">Manchester - Thailand flights 3rd Jan - 4th March 2019</span></p>
                                                 </div>
@@ -460,7 +460,7 @@
                                         
                                         <div class="col-4">   
                                             <div class="card no-gutters">
-                                                <img class="card-img-top img-fluid" src="travel-image/scenery-8.jpg" alt="Card image cap">
+                                                <img class="card-img-top img-fluid rounded opacity hover-opacity-off" src="travel-image/scenery-8.jpg" alt="Card image cap">
                                                 <div class="line-height-md">
                                                     <p class="large pt-3 pl-3 pr-2"><i class="fas fa-plane"></i> Flight <br> <span class="small">Manchester - Thailand flights 3rd Jan - 4th March 2019</span></p>
                                                 </div>
@@ -494,7 +494,7 @@
                                         
                                         <div class="col-4">   
                                             <div class="card no-gutters">
-                                                <img class="card-img-top img-fluid" src="travel-image/scenery-9.jpg" alt="Card image cap">
+                                                <img class="card-img-top img-fluid rounded opacity hover-opacity-off" src="travel-image/scenery-9.jpg" alt="Card image cap">
                                                 <div class="line-height-md">
                                                     <p class="large pt-3 pl-3 pr-2"><i class="fas fa-plane"></i> Flight <br> <span class="small">Manchester - Thailand flights 3rd Jan - 4th March 2019</span></p>
                                                 </div>
@@ -555,7 +555,7 @@
                                 <div class="row no-gutters">   
                                         <div class="col-6 pr-1">   
                                             <div class="border">
-                                                <img class="img-fluid w-100" src="travel-image/scenery-1.jpg" alt="Card image cap">
+                                                <img class="img-fluid w-100 rounded opacity hover-opacity-off" src="travel-image/scenery-1.jpg" alt="Card image cap">
                                                 <div class="line-height-md">
                                                     <p class="pt-2 pl-1 pt-sm-3 pl-sm-3"><i class="fas fa-plane"></i> Flight <br> <span class="xsmall">Manchester - Thailand <br>3rd Jan - 4th March 2019</span></p>
                                                 </div>
@@ -578,10 +578,10 @@
                                                         <p class="xxsmall pt-1 pl-1 pl-sm-2">£234.77</p>
                                                     </div>
                                                     <div class="col-4 col-sm-3 text-right">
-                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-2 pl-2 border border-info bg-info text-white">OFFER</span></a>
+                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-1 pl-1 pr-md-2 pl-md-2 border border-info bg-info text-white">OFFER</span></a>
                                                     </div>
                                                     <div class="col-4 col-sm-3 text-right pr-2 pr-sm-0">
-                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-2 pl-2 border border-info bg-info text-white">BUY</span></a>
+                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-1 pl-1 pr-md-2 pl-md-2 border border-info bg-info text-white">BUY</span></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -589,7 +589,7 @@
                                         
                                         <div class="col-6 pl-1">   
                                             <div class="card no-gutters">
-                                                <img class="card-img-top img-fluid" src="travel-image/scenery-2.jpg" alt="Card image cap">
+                                                <img class="card-img-top img-fluid rounded opacity hover-opacity-off" src="travel-image/scenery-2.jpg" alt="Card image cap">
                                   <div class="line-height-md">
                                                     <p class="pt-2 pl-1 pt-sm-3 pl-sm-3"><i class="fas fa-plane"></i> Flight <br> <span class="xsmall">Manchester - Thailand <br>3rd Jan - 4th March 2019</span></p>
                                                 </div>
@@ -612,10 +612,10 @@
                                                         <p class="xxsmall pt-1 pl-1 pl-sm-2">£234.77</p>
                                                     </div>
                                                     <div class="col-4 col-sm-3 text-right">
-                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-2 pl-2 border border-info bg-info text-white">OFFER</span></a>
+                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-1 pl-1 pr-md-2 pl-md-2 border border-info bg-info text-white">OFFER</span></a>
                                                     </div>
                                                     <div class="col-4 col-sm-3 text-right pr-2 pr-sm-0">
-                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-2 pl-2 border border-info bg-info text-white">BUY</span></a>
+                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-1 pl-1 pr-md-2 pl-md-2 border border-info bg-info text-white">BUY</span></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -627,7 +627,7 @@
                                 <div class="row">   
                                         <div class="col-6 pr-1">   
                                             <div class="card no-gutters">
-                                                <img class="card-img-top img-fluid" src="travel-image/scenery-4.jpg" alt="Card image cap">
+                                                <img class="card-img-top img-fluid rounded opacity hover-opacity-off" src="travel-image/scenery-4.jpg" alt="Card image cap">
                                                 <div class="line-height-md">
                                                     <p class="pt-2 pl-1 pt-sm-3 pl-sm-3"><i class="fas fa-plane"></i> Flight <br> <span class="xsmall">Manchester - Thailand <br>3rd Jan - 4th March 2019</span></p>
                                                 </div>
@@ -650,10 +650,10 @@
                                                         <p class="xxsmall pt-1 pl-1 pl-sm-2">£234.77</p>
                                                     </div>
                                                     <div class="col-4 col-sm-3 text-right">
-                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-2 pl-2 border border-info bg-info text-white">OFFER</span></a>
+                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-1 pl-1 pr-md-2 pl-md-2 border border-info bg-info text-white">OFFER</span></a>
                                                     </div>
                                                     <div class="col-4 col-sm-3 text-right pr-2 pr-sm-0">
-                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-2 pl-2 border border-info bg-info text-white">BUY</span></a>
+                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-1 pl-1 pr-md-2 pl-md-2 border border-info bg-info text-white">BUY</span></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -661,7 +661,7 @@
                                         
                                         <div class="col-6 pl-1">   
                                             <div class="card no-gutters">
-                                                <img class="card-img-top img-fluid" src="travel-image/scenery-5.jpg" alt="Card image cap">
+                                                <img class="card-img-top img-fluid rounded opacity hover-opacity-off" src="travel-image/scenery-5.jpg" alt="Card image cap">
                                                 <div class="line-height-md">
                                                     <p class="pt-2 pl-1 pt-sm-3 pl-sm-3"><i class="fas fa-plane"></i> Flight <br> <span class="xsmall">Manchester - Thailand <br>3rd Jan - 4th March 2019</span></p>
                                                 </div>
@@ -684,10 +684,10 @@
                                                         <p class="xxsmall pt-1 pl-1 pl-sm-2">£234.77</p>
                                                     </div>
                                                     <div class="col-4 col-sm-3 text-right">
-                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-2 pl-2 border border-info bg-info text-white">OFFER</span></a>
+                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-1 pl-1 pr-md-2 pl-md-2 border border-info bg-info text-white">OFFER</span></a>
                                                     </div>
                                                     <div class="col-4 col-sm-3 text-right pr-2 pr-sm-0">
-                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-2 pl-2 border border-info bg-info text-white">BUY</span></a>
+                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-1 pl-1 pr-md-2 pl-md-2 border border-info bg-info text-white">BUY</span></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -699,7 +699,7 @@
                                 <div class="row">   
                                         <div class="col-6 pr-1">   
                                             <div class="card no-gutters">
-                                                <img class="card-img-top img-fluid" src="travel-image/scenery-7.jpg" alt="Card image cap">
+                                                <img class="card-img-top img-fluid rounded opacity hover-opacity-off" src="travel-image/scenery-7.jpg" alt="Card image cap">
                                                 <div class="line-height-md">
                                                     <p class="pt-2 pl-1 pt-sm-3 pl-sm-3"><i class="fas fa-plane"></i> Flight <br> <span class="xsmall">Manchester - Thailand <br>3rd Jan - 4th March 2019</span></p>
                                                 </div>
@@ -722,10 +722,10 @@
                                                         <p class="xxsmall pt-1 pl-1 pl-sm-2">£234.77</p>
                                                     </div>
                                                     <div class="col-4 col-sm-3 text-right">
-                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-2 pl-2 border border-info bg-info text-white">OFFER</span></a>
+                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-1 pl-1 pr-md-2 pl-md-2 border border-info bg-info text-white">OFFER</span></a>
                                                     </div>
                                                     <div class="col-4 col-sm-3 text-right pr-2 pr-sm-0">
-                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-2 pl-2 border border-info bg-info text-white">BUY</span></a>
+                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-1 pl-1 pr-md-2 pl-md-2 border border-info bg-info text-white">BUY</span></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -733,7 +733,7 @@
                                         
                                         <div class="col-6 pl-1">   
                                             <div class="card no-gutters">
-                                                <img class="card-img-top img-fluid" src="travel-image/scenery-8.jpg" alt="Card image cap">
+                                                <img class="card-img-top img-fluid rounded opacity hover-opacity-off" src="travel-image/scenery-8.jpg" alt="Card image cap">
                                                 <div class="line-height-md">
                                                     <p class="pt-2 pl-1 pt-sm-3 pl-sm-3"><i class="fas fa-plane"></i> Flight <br> <span class="xsmall">Manchester - Thailand <br>3rd Jan - 4th March 2019</span></p>
                                                 </div>
@@ -756,10 +756,10 @@
                                                         <p class="xxsmall pt-1 pl-1 pl-sm-2">£234.77</p>
                                                     </div>
                                                     <div class="col-4 col-sm-3 text-right">
-                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-2 pl-2 border border-info bg-info text-white">OFFER</span></a>
+                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-1 pl-1 pr-md-2 pl-md-2 border border-info bg-info text-white">OFFER</span></a>
                                                     </div>
                                                     <div class="col-4 col-sm-3 text-right pr-2 pr-sm-0">
-                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-2 pl-2 border border-info bg-info text-white">BUY</span></a>
+                                                        <a href="" class="link-0"><span class="hover-opacity-on xsmall pt-1 pb-1 pr-1 pl-1 pr-md-2 pl-md-2 border border-info bg-info text-white">BUY</span></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -792,32 +792,37 @@
         </div> -->
         
 <!--Most popular destinations-->
-        <div class="container pb-5">
+        <div id=destinations"" class="container pb-5">
             <h3 class="text-purple text-center" style="padding-bottom:30px">MOST POPULAR DESTINATIONS</h3>
             <div class="row" style="padding-bottom: 0px;">
                 <div class="col-lg-1"></div>
                 <div class="col-lg-12 col-xs-12 col-sm-12">
                     <div id="carouselExampleControls01" class="carousel slide" data-ride="carousel">
+                        <!--
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleControls01" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleControls01" data-slide-to="1"></li>
                             <li data-target="#carouselExampleControls01" data-slide-to="2"></li>
-                        </ol>
+                        </ol>-->
                         <div class="carousel-inner">
         <!--1st group of pictures--->                          
                             <div class="carousel-item active">
                                 <div class="row">
                                     <div class="col-lg-3 col-xs-3 col-sm-3 col-6 p-3">
-                                        <img class="d-block w-100 rounded opacity hover-opacity-off" src="travel-image/france-1.jpg" alt="First slide" >
+                                        <img class="d-block w-100 rounded opacity hover-opacity-off" src="travel-image/france-1.jpg" alt="First slide">
+                                        <h5 class="text-center text-purple pt-1">France</h5>
                                     </div>
                                     <div class="col-lg-3 col-xs-3 col-sm-3 col-6 p-3">
                                         <img class="d-block w-100 rounded opacity hover-opacity-off" src="travel-image/new-york-1.jpg" alt="First slide">
+                                        <h5 class="text-center text-purple pt-1">New York</h5>
                                     </div>
                                     <div class="col-lg-3 col-xs-3 col-sm-3 col-6 p-3">
                                         <img class="d-block w-100 rounded opacity hover-opacity-off" src="travel-image/australia-1.jpg" alt="First slide">
+                                        <h5 class="text-center text-purple pt-1">Australia</h5>
                                     </div>
                                      <div class="col-lg-3 col-xs-3 col-sm-3 col-6 p-3">
                                         <img class="d-block w-100 rounded opacity hover-opacity-off" src="travel-image/roma-1.jpg" alt="First slide">
+                                        <h5 class="text-center text-purple pt-1">Roma</h5>
                                     </div>
                                 </div>
                             </div>
@@ -825,16 +830,20 @@
                             <div class="carousel-item">
                                 <div class="row">
                                     <div class="col-lg-3 col-xs-3 col-sm-3 col-6 p-3">
-                                        <img class="d-block w-100 rounded opacity hover-opacity-off" src="travel-image/france-1.jpg" alt="First slide" >
+                                        <img class="d-block w-100 rounded opacity hover-opacity-off" src="travel-image/netherland-5.jpg" alt="First slide" >
+                                        <h5 class="text-center text-purple pt-1">Netherland</h5>
                                     </div>
                                     <div class="col-lg-3 col-xs-3 col-sm-3 col-6 p-3">
-                                        <img class="d-block w-100 rounded opacity hover-opacity-off" src="travel-image/new-york-1.jpg" alt="First slide">
+                                        <img class="d-block w-100 rounded opacity hover-opacity-off" src="travel-image/netherland-2.jpg" alt="First slide">
+                                        <h5 class="text-center text-purple pt-1">Netherland</h5>
                                     </div>
                                     <div class="col-lg-3 col-xs-3 col-sm-3 col-6 p-3">
-                                        <img class="d-block w-100 rounded opacity hover-opacity-off" src="travel-image/australia-1.jpg" alt="First slide">
+                                        <img class="d-block w-100 rounded opacity hover-opacity-off" src="travel-image/iceland-1.jpg" alt="First slide">
+                                        <h5 class="text-center text-purple pt-1">Iceland</h5>
                                     </div>
                                      <div class="col-lg-3 col-xs-3 col-sm-3 col-6 p-3">
-                                        <img class="d-block w-100 rounded opacity hover-opacity-off" src="travel-image/roma-1.jpg" alt="First slide">
+                                        <img class="d-block w-100 rounded opacity hover-opacity-off" src="travel-image/iceland-2.jpg" alt="First slide">
+                                        <h5 class="text-center text-purple pt-1">Iceland</h5>
                                     </div>
                                 </div>
                             </div>
@@ -842,16 +851,20 @@
                             <div class="carousel-item">
                                 <div class="row">
                                     <div class="col-lg-3 col-xs-3 col-sm-3 col-6 p-3">
-                                        <img class="d-block w-100 rounded opacity hover-opacity-off" src="travel-image/france-1.jpg" alt="First slide" >
+                                        <img class="d-block w-100 rounded opacity hover-opacity-off" src="travel-image/greenland-1.jpg" alt="First slide" >
+                                        <h5 class="text-center text-purple pt-1">Greenland</h5>
                                     </div>
                                     <div class="col-lg-3 col-xs-3 col-sm-3 col-6 p-3">
-                                        <img class="d-block w-100 rounded opacity hover-opacity-off" src="travel-image/new-york-1.jpg" alt="First slide">
+                                        <img class="d-block w-100 rounded opacity hover-opacity-off" src="travel-image/greenland-2.jpg" alt="First slide">
+                                        <h5 class="text-center text-purple pt-1">Greenland</h5>
                                     </div>
                                     <div class="col-lg-3 col-xs-3 col-sm-3 col-6 p-3">
-                                        <img class="d-block w-100 rounded opacity hover-opacity-off" src="travel-image/australia-1.jpg" alt="First slide">
+                                        <img class="d-block w-100 rounded opacity hover-opacity-off" src="travel-image/netherland-1.jpg" alt="First slide">
+                                        <h5 class="text-center text-purple pt-1">Netherland</h5>
                                     </div>
                                      <div class="col-lg-3 col-xs-3 col-sm-3 col-6 p-3">
-                                        <img class="d-block w-100 rounded opacity hover-opacity-off" src="travel-image/roma-1.jpg" alt="First slide">
+                                        <img id="contact" class="d-block w-100 rounded opacity hover-opacity-off" src="travel-image/roma-2.jpg" alt="First slide">
+                                        <h5 class="text-center text-purple pt-1">Roma</h5>
                                     </div>
                                 </div> 
                             </div>
@@ -870,12 +883,14 @@
             </div>  
         </div>
         
-        
+        <div id="tothetop">
+            <a href="#menu"><i class="fa fa-arrow-up"></i> Top</a> 
+        </div>
         
 <!--PC-footer-->   
-        <footer class="text-center opacity hover-opacity-off d-none d-md-block" style="max-width:100%;height:300px;background-color: black;padding-top:95px">
+        <footer class="text-center opacity hover-opacity-off d-none d-md-block" style="max-width:100%;height:300px;background-color: #008699;padding-top:95px">
 
-            <a href="#home"><button type="button" class="btn btn-sm"><i class="fa fa-arrow-up"></i> To the top</button></a>   
+            <a href="#menu"><button type="button" class="btn btn-sm"><i class="fa fa-arrow-up"></i> To the top</button></a>   
 
             <p class="text-white p-3">
                 <i class="fab fa-weixin"></i>
@@ -886,9 +901,9 @@
         </footer>
         
 <!--Mobile-footer-->   
-        <footer class="text-center opacity hover-opacity-off d-block d-md-none" style="max-width:100%;height:200px;background-color: black;padding-top:50px">
+        <footer class="text-center opacity hover-opacity-off d-block d-md-none" style="max-width:100%;height:200px;background-color: #008699;padding-top:50px">
 
-            <a href="#carouselExampleIndicators"><button type="button" class="btn btn-sm"><i class="fa fa-arrow-up"></i> To the top</button></a>   
+            <a href="#menu"><button type="button" class="btn btn-sm"><i class="fa fa-arrow-up"></i> To the top</button></a>   
   
 
             <p class="text-white p-3">
